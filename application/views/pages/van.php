@@ -1,19 +1,33 @@
 <body>
-  <header>
+  <header class="m-main">
     <h1><?php echo $head;?></h1>
   </header>
 <div class="container">
+  <div class="flex1">
+    <?php $this->load->view("nav/navigate");?>
+  </div>
   <div class="flex-large">
     <?php foreach($mainContent as $row):?>
-      <article class="ancestry">
-        <h2 class="ancestryTitle item"><?php echo $row->title;?></h2>
-        <div class="ancestryContent item"><?php echo $this->typography->auto_typography($row->content);?> </div>
-        <h6 class="ancestryDate"><?php echo $row->date;?></h6>
-    </article>
+      <?php $content = htmlspecialchars_decode($row->content);?>
+      <?php $slug    = htmlspecialchars_decode($row->slug);?>
+      <div class="ancestry--container">
+        <article class="ancestry">
+          <h3 class="ancestry--ancestryTitle item"><?php echo $row->title;?></h3>
+          <?php echo $slug; ?>
+          <div class="ancestry--ancestryContent item"><?php echo $this->typography->auto_typography($content);?> 
+          <h6 class="ancestry--ancestryDate"><?php echo "Creation " . html_escape($row->date), nbs(5), "Last Updated " . html_escape($row->last_date);?></h6>
+          </div>
+        </article>
+      </div>
     <?php endforeach;?>
+      <?php echo $this->pagination->create_links();?>
   </div>
+  <!-- right hand side -->
   <div class="flex-small">
-    <?php include(APPPATH . "/views/nav/nav.php");
-    echo current_url(); ?>
+    <section class="wrapper">
+      <article>
+        <?php $this->load->file(APPPATH . "/views/pages/includes/side.php");?>
+      </article>
+    </section>
   </div>
 </div>

@@ -1,12 +1,15 @@
-// out: ../dist/typo-dist.css, compress: true, autoprefixer
-
+// out: ../dist/typo-dist.css, sourcemap: true, compress: true
 @import (less) url("colors.less");
+@import (less) url("../../node_modules/open-color/open-color.less");
 h1 {
-  font-size: 3.3rem; /*40px 50rem*/
+  font-size: 3.3rem;
+  /*40px 50rem*/
   margin: 0.8em 0;
   line-height: 1.35;
   font-weight: 900;
+  font-family: "air_conditionerregular";
 }
+
 h2 {
   font-size: 2.3rem;
   margin: 1em 0;
@@ -14,16 +17,18 @@ h2 {
   color: gray;
   font-weight: 800;
 }
+
 h3 {
   font-size: 1.85rem;
-  margin: 1.3em 0;
+  margin: 0.5em 0;
   line-height: 1.6;
   font-weight: 700;
+  font-variant-caps: small-caps;
 }
 
 h4 {
   font-size: 1.55rem;
-  margin: 1.5em 0;
+  margin: 0.8em 0;
   line-height: 1.7;
   font-weight: 700;
 }
@@ -34,8 +39,9 @@ h5 {
   line-height: 1.6;
   font-weight: 600;
 }
+
 h6 {
-  font-size: 1.25rem;
+  font-size: 1.10rem;
   margin: 1.6em 0;
   line-height: 1.6;
   font-weight: 500;
@@ -48,11 +54,16 @@ p {
   }
 }
 
-abbr[title] {
-  border-bottom: 1px dotted;
-}
 b, strong {
   font-weight: bold;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+dt {
+  margin: .5em 0;
 }
 
 dfn {
@@ -60,12 +71,13 @@ dfn {
 }
 
 mark {
-  background: #ffff00;
+  background: @grapep;
   color: #000000;
+  font-family: "bornregular";
 }
 
 .small {
-  font-size: 80%;
+  font-size: 0.75em;
 }
 
 sub, sup {
@@ -84,6 +96,8 @@ sub {
 }
 
 img {
+  max-height: 100%;
+  max-width: 100%;
   border: 0;
 }
 
@@ -92,7 +106,27 @@ svg:not(:root) {
 }
 
 figure {
-  margin: 1em 40px;
+  background-color: #1098ad;
+  height: auto;
+  margin: 0;
+  padding: 5px;
+  width: 374px;
+}
+.introbox {
+  clear: right;
+  float: left;
+  height: auto;
+  margin: 0 10px 0 0;
+  padding: 0;
+  text-align: center;
+  width: 370px;
+}
+
+figcaption {
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
 }
 
 hr {
@@ -121,9 +155,10 @@ blockquote {
 .error {
   color: white;
   background: tomato;
-  font-size: 1.5em;
+  font-size: 1.15em;
   border-radius: 5px;
 }
+
 .center {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -133,33 +168,99 @@ blockquote {
   -ms-grid-row-align: center;
   align-items: center;
 }
+
 .centered {
   text-align: center;
 }
+td {
+  padding: 0.5em;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+th {
+  text-align: center;
+}
+
 .line {
   display: inline;
 }
+
 .left {
   justify-content: flex-start;
   width: 100%;
   margin: 0;
-  .tangle;
 }
+.right {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2em;
+  width: 100%;
+}
+//-------------------------------------------------------- fonts
 .air {
   font-family: "air_conditionerregular";
 }
+
 .bitter {
   font-family: "bittersweet_nfregular";
 }
+
 .england {
   font-family: "england_hand_dbregular";
 }
+
 .hallo {
   font-family: "hallo_sansregular";
 }
+
 .soria {
   font-family: soriasoria;
 }
+
 .tangle {
   font-family: "tanglewood_tales_nfregular";
+}
+
+li {
+  list-style: none;
+  padding: 5px 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.pagination {
+  font-size: 1.5em;
+}
+
+.grab {
+  width: 110px;
+  transition: all 0.25s ease-in;
+  background-color: transparent;
+  border-radius: 5px;
+  display: inline;
+}
+
+.grab:hover {
+  background-color: @oc-green-3;
+  box-shadow: 1px 1px 4px @sidebar;
+  border-radius: 10px;
+}
+
+.current {
+  background-color: @oc-cyan-2;
+  color: @oc-green-9;
+}
+
+input[type="text"] {
+  min-width: 45%;
+}
+.opa { //open posts
+  opacity: 0.5;
+  display: inline;
 }

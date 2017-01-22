@@ -1,12 +1,11 @@
 <body>
-  <header>
+  <header class="m-main">
     <h1><?php echo $head;?></h1>
   </header>
 <div class="container">
   <div class="flex-large">
     <fieldset><legend>Post Entry Form</legend>
       <?php echo validation_errors(); ?>
-      <div id="display" class="error"></div>
     <?php
     $attr1 = [
       "id"    => "ajax",
@@ -22,7 +21,7 @@
       "maxlength"   => "100",
       "style"       => "width: 50%",
       "placeholder" => "Title",
-      'value'       => s$row->title
+      'value'       => set_value('title')
     ];
 
     echo form_input($attr2);?>
@@ -31,20 +30,31 @@
     <?php $attr2 = [
       "id"        => "content",
       "name"      => "content",
-      'value' => $row->content
+      'placeholder' => 'Content',
+      'value' => set_value('content')
     ];
 
     echo form_textarea($attr2);
+    ?>
+    <label for="slug">Slug</label>
+    <?php
+      $attr6 = [
+        'name'        => 'slug',
+        'id'          => 'slug',
+        'placeholder' => 'Slug',
+        'value'       => set_value('slug'),
+        'class'       => 'slug1'
+      ];
+      echo form_textarea($attr6);
     ?>
 
     <label for="date">Date</label>
     <?php $attr3 = [
       "id"    => "date",
       "name"  => "date",
-      "type"  => "date",
       "class" => "datestamp",
       "class" => "pure-form pure-input-1-2",
-      'value' => $row->date
+      'value' => set_value('date')
     ];
 
     echo form_input($attr3); ?>
@@ -65,8 +75,7 @@
       "VanHorn" => "VanHorn",
       "Bostick" => "Bostick",
       "main"    => "main",
-      "general" => "General",
-      'value'   => $row->parent
+      "general" => "General"
     ];
 
     echo form_dropdown('parent', $attr4);?>
@@ -80,8 +89,45 @@
     </fieldset>
   </div>
   <div class="flex-small">
-    <p>
-      File list.
-    </p>
+    <section class="wrapper">
+      <article>
+        <?php
+        if($this->session->userdata('name') == true){
+            echo "Hello " .  $this->session->userdata('name');
+        }?>
+      </article>
+      <article>
+        Results
+        <div id="display"></div>
+      </article>
+      <article>
+        <span>Chars Count: </span> <span id=feedback> </span>
+        <br>
+        Total word Count : <span id="display_count">0</span>
+      </article>
+      <article class="small">
+        <?php foreach($getlist as $row)
+        {
+            $id = "forms/fill_form/$row->id";
+            $this->table->add_row(
+            anchor($id, $row->id),
+            $row->title,
+            $row->parent,
+            $row->status
+            );
+        }
+        echo $this->table->generate();
+        ?>
+      </article>
+      <article>
+        <p>
+          <pre>< button class="grab">Read More< /button></pre>
+        </p>
+
+      </article>
+      <article>
+        <?php $this->load->file(APPPATH . "/views/pages/includes/side1.php"); ?>
+      </article>
+    </section>
   </div>
 </div>
