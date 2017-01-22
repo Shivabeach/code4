@@ -1,0 +1,32 @@
+@charset "UTF-8"
+//main top header
+.m-main
+	display: -webkit-box
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-align: center
+	-ms-flex-align: center
+	align-items: center
+	-webkit-box-pack: center
+	-ms-flex-pack: center
+	justify-content: center
+	width: 80%
+	margin: 0 auto
+	-ms-flex-wrap: wrap
+	flex-wrap: wrap
+	height: 15em
+
+	+tablet
+		height: 8em
+
+	+mobile
+		height: 5em
+
+	&--head
+		font-family: $font-stack-consolas
+
+		+tablet
+			font-size: $base-font-size * 3
+
+		+mobile
+			font-size: $base-font-size * 3

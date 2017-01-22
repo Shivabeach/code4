@@ -1,0 +1,56 @@
+<html>
+      <head>
+        <meta charset="UTF-8">
+        <title>README.md</title>
+      </head>
+      <body>
+        <h1 id="jquery-ui-vertical-tabs">jQuery UI Vertical Tabs</h1>
+<p>An extension of the jQuery UI tabs widget that adds the ability to display tabs vertically.</p>
+<h3 id="show-me-a-demo">Show me a demo</h3>
+<p>Ok. <a href="http://jsfiddle.net/tj_vantoll/dbYHL/">Here you go.</a></p>
+<h3 id="how-does-it-work-">How does it work?</h3>
+<p>The extension adds a single <code>orientation</code> option to the jQuery UI tabs widget. For consistency with other jQuery UI widgets, the <code>orientation</code> option can be set to <code>&quot;horizontal&quot;</code> or <code>&quot;vertical&quot;</code>, and defaults to <code>&quot;horizontal&quot;</code>.</p>
+<p>When the tabs are displayed vertically, the extension places a <code>ui-vertical-tabs</code> class name on the tabs element for styling purposes.</p>
+<h3 id="show-me-some-code">Show me some code</h3>
+<p>The following creates a vertical tabs control by setting the <code>orientation</code> option to <code>&quot;vertical&quot;</code>:</p>
+<pre><code>&lt;link href=&quot;http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;vertical-tabs.css&quot;&gt;
+
+&lt;div id=&quot;tabs&quot;&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#tabs-1&quot;&gt;One&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#tabs-2&quot;&gt;Two&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#tabs-3&quot;&gt;Three&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;div id=&quot;tabs-1&quot;&gt;
+        One Contents
+    &lt;/div&gt;
+    &lt;div id=&quot;tabs-2&quot;&gt;
+        Two Contents
+    &lt;/div&gt;
+    &lt;div id=&quot;tabs-3&quot;&gt;
+        Three Contents
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script src=&quot;http://code.jquery.com/jquery-2.1.1.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;http://code.jquery.com/ui/1.11.0/jquery-ui.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;vertical-tabs.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    $( &quot;#tabs&quot; ).tabs({ orientation: &quot;vertical&quot; });
+&lt;/script&gt;
+</code></pre><p>The option plays nice with jQuery UI widget conventions, so you can use the <code>option()</code> method to change the orientation...</p>
+<pre><code>$( &quot;#tabs&quot; ).tabs( &quot;option&quot;, &quot;orientation&quot;, &quot;horizontal&quot; });
+</code></pre><p>...or you can change the default of the option by changing it on the widget&#39;s prototype. For instance the following changes the default from <code>&quot;horizontal&quot;</code> to <code>&quot;vertical&quot;</code>:</p>
+<pre><code>$.ui.tabs.prototype.options.orientation = &quot;vertical&quot;;
+</code></pre><h3 id="amd-usage">AMD Usage</h3>
+<p>The extension supports AMD usage, including the use of the <a href="http://learn.jquery.com/jquery-ui/environments/amd/">AMD modules that were introduced in jQuery UI 1.11</a>. For details on usage, refer to <a href="https://github.com/tjvantoll/jquery-ui-vertical-tabs/blob/master/demos/usage-amd.html">this repository&#39;s packaged demo</a>, which is a complete example of using this extension in an AMD setting.</p>
+<h3 id="bower-usage">Bower Usage</h3>
+<p><code>bower install jquery-ui-vertical-tabs</code></p>
+<h3 id="license">License</h3>
+<p>MIT. Go nuts.</p>
+<h3 id="want-to-learn-more-">Want to learn more?</h3>
+<p>This extension, as well as the process of building and using jQuery UI extensions is thoroughly explained in <a href="http://tjvantoll.com/jquery-ui-in-action.html"><em>jQuery UI in Action</em></a>.</p>
+
+      </body>
+    </html>

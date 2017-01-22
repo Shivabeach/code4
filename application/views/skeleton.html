@@ -1,0 +1,197 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+?><!DOCTYPE html><html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title><?php echo $title; ?></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <?php
+    $meta = array(
+        array(
+                'name'    => 'robots',
+                'content' => 'no-cache'
+        ),
+        array(
+                'name'    => 'description',
+                'content' => 'VanHorn Bostick Family Linage. The story of the four families from Norway, England and the transistion from Europe to America'
+        ),
+        array(
+                'name'    => 'keywords',
+                'content' => 'DNA, Ancestry, England, Germany, Norway, history, names, cousin, great-grandfather, mother, father, relatives, New Jersey, arrival, sailing ships, Sweden, hapalogs, haplogroup, STR, allele, SNP, ancestors, YSEQ'
+        ),
+        array(
+                'name'    => 'author',
+                'content' => 'Brad VanHorn'
+        ),
+        array(
+                'name'    => 'generator',
+                'content' => 'Atom'
+        )
+    );
+    echo meta($meta);
+    ?>
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/main.css');?>" media="screen">
+    <script src="https://use.fontawesome.com/20227c755d.js"></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.min.css">
+    <!-- <link rel="stylesheet" href="<?php echo base_url('assets/plugins/vert/vertical-tabs.css');?>"> -->
+  </head>
+  	<header class="m-main">
+			<h1 class="m-main--head"><?php echo $head;?></h1>
+		</header>
+    <!-- done -->
+	<main id="container">
+
+		<div id="l-left-flex1">
+			<section>
+				<header class="l-top">
+					<h4>Navigation</h4>
+				</header>
+					<?php $this->load->view('nav/navigate');?>
+			</section>
+		</div>
+<!-- column with section -->
+		<div id="l-center-flex2">
+			<section class="l-center-flex2--wrapper">
+				<div class="card--contain">
+					<article class="card">
+						<header class="l-top">
+							<h4 class="card--head">This will be the top</h4>
+						</header>
+
+						<p class="card--block">Paragraph</p>
+						<p class="card--block">Do I want the footer inside the contain block or not?</p>
+						<!-- content -->
+
+						<footer class="l-bottom">
+							<h4 class="card--foot">This is the bottom</h4>
+						</footer>
+
+					</article>
+				</div>
+
+				<article class="ancestry">
+				<div class="ancestry--container">
+					<header class="l-top">
+						<h4 class="ancestry--ancestryTitle">Affected module</h4>
+					</header>
+          <div class="ancestry--ancestryContent">
+					<p class="ancestry--block">Paragraph</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, dolor velit vitae molestiae voluptatum numquam dolores? Ab natus illo, earum accusantium voluptas deleniti aspernatur ut, autem dolore ex adipisci itaque.</p>
+          </div>
+					<!-- content -->
+					<footer>
+						<h4 class="ancestry--ancestryDate">This bottom</h4>
+					</footer>
+					</div>
+				</article>
+				<article class="ancestry">
+				<div class="card--contain">
+					<header class="l-top">
+						<h4 class="ancestry--ancestryTitle">This will be the top</h4>
+					</header>
+
+					<p class="card--block">Paragraph</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, dolor velit vitae molestiae voluptatum numquam dolores? Ab natus illo, earum accusantium voluptas deleniti aspernatur ut, autem dolore ex adipisci itaque.</p>
+					<!-- content -->
+					<footer class="l-bottom">
+						<h4 class="card--foot">This is the bottom</h4>
+					</footer>
+					</div>
+				</article>
+			</section>
+		</div>
+
+<!-- column with section -->
+		<div id="l-right-flex3">
+			<section>
+				<article class="card">
+					<header class="l-top">
+						<h4 class="card--head">This will be the top</h4>
+					</header>
+					<div class="card--contain">
+					<p class="card--block">Paragraph</p>
+					<?php
+					echo "<p class='card--block'> dogpoop </p>";
+					?>
+					<!-- content -->
+
+					<footer class="l-bottom">
+						<h4 class="card--foot">This is the bottom</h4>
+					</footer>
+					</div>
+				</article>
+			</section>
+		</div>
+	</main>
+<!-- footer -->
+	<footer id="bottom">
+      <div class="nav-grid">
+        <h6 class="centered">VanHorn Family</h6>
+        <ul>
+          <li class="line"><i class="fa fa-link" aria-hidden="true"></i>
+ <?php echo anchor('Pages/van','VanHorn History', 'title="VanHorn"');?></li>
+          <li class="line"><i class="fa fa-link" aria-hidden="true"></i>
+ <?php echo anchor('Pages/vandna','VanHorn DNA', 'title="DNA"');?></li>
+          <li class="line"><i class="fa fa-link" aria-hidden="true"></i>
+ <?php echo anchor('Pages/vanlinage','VanHorn Linages');?></li>
+          <li class="line"><i class="fa fa-link" aria-hidden="true"></i>
+ <a href="#">Stories</a></li>
+        </ul>
+      </div>
+      <div class="nav-grid">
+        <h6 class="centered">Bostick Family</h6>
+        <ul>
+          <li class="line"><i class="fa fa-link"></i>
+ <?php echo anchor('Pages/bos','Bostick History');?></li>
+          <li class="line"><i class="fa fa-link"></i>
+ <?php echo anchor('Pages/bosdna','Bostick DNA');?></li>
+          <li class="line"><i class="fa fa-link" aria-hidden="true"></i>
+ <?php echo anchor('Pages/boslinage','Bostick Linages');?></li>
+          <li class="line"><i class="fa fa-link" aria-hidden="true"></i>
+ <a href="#">Stories</a></li>
+        </ul>
+      </div>
+      <div class="nav-grid">
+        <h6 class="centered">General Links</h6>
+        <ul>
+          <li class="line"><i class="fa fa-home" aria-hidden="true"></i>
+ <?php echo anchor("", "Home"); ?></li>
+          <li class="line"><i class="fa fa-link" aria-hidden="true"></i>
+ <?php echo anchor("pages/map", "Ancestoral Map"); ?></li>
+          <li class="line"><i class="fa fa-link" aria-hidden="true"></i>
+ <?php echo anchor("checkin", "Log In"); ?></li>
+          <li class="line"><i class="fa fa-link" aria-hidden="true"></i>
+            <?php echo anchor("pages/notes", "Family Notes"); ?></li>
+          <li><i class="fa fa-link" aria-hidden="true"></i>
+            <?php echo anchor("pages/relatives", "Family Connections"); ?>
+          </li>
+        </ul>
+        <a href="http://van-horn.us/pages/army"><span style="display: none;">zeal</span></a>
+      </div>
+
+      <div class="nav-grid box20">
+        <p class="small">&copy; <?php
+           $fromYear = 2008;
+           $thisYear = (int)date('Y');
+           echo $fromYear . (($fromYear != $thisYear) ? '-' . $thisYear : '');?> VanHorn Family.
+         </p>
+         <p>
+           Mail to: <a href="mailto:&#98;&#114;&#97;&#100;&#64;&#118;&#97;&#110;&#45;&#104;&#111;&#114;&#110;&#46;&#117;&#115;">&#98;&#114;&#97;&#100;&#64;&#118;&#97;&#110;&#45;&#104;&#111;&#114;&#110;&#46;&#117;&#115;</a>
+         </p>
+         <p>Page loaded in {elapsed_time} seconds</p>
+      </div>
+      <span id="men"></span>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-migrate-3.0.0.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src="<?php echo base_url('assets/js/functions.js');?>"></script>
+  <!-- <script src="<?php echo base_url('assets/plugins/count.min.js');?>"></script> -->
+  <!-- <script src="<?php echo base_url('assets/plugins/vert/vertical-tabs.js');?>"></script> -->
+
+</body>
+</html>

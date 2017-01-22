@@ -1,0 +1,24 @@
+@charset "UTF-8"
+
+=center($value, $value2)
+	justify-content: $value
+	align-items: $value2
+
+
+
+//media queries
+
+=desktop
+	@media screen and (min-width: $desktop)
+		@content
+
+=tablet
+	@media screen and (min-width: $tablet) and (max-width: $desktop - 1px)
+		@content
+
+=mobile
+	@media screen and (max-width: $tablet - 1px)
+		@content
+
+=butt($border)
+	border-radius: $border
