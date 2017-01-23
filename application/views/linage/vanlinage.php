@@ -1,5 +1,6 @@
-  <header class="m-main">
-      <h1><?php echo $head;?></h1>
+  <body id="vanlinage">
+    <header class="m-main">
+      <h1 class="heading"><?php echo $head;?></h1>
     </header>
   <div class="container">
     <div class="flex1">
@@ -79,8 +80,6 @@
         <h3>Gerrit Couwenhoven </h3>
         <?php include("gerrit.html");?>
       </article>
-
-      Gerrit Jansz Van Couwenhoven
 
     </article> <!-- end of tabs -->
     </div> <!--end of left flex -->

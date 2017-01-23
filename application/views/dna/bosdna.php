@@ -1,11 +1,11 @@
 <body id="mydna">
   <header class="m-main">
-    <h1><?php echo $head;?></h1>
+    <h1 class="heading"><?php echo $head;?></h1>
   </header>
 <div class="container">
   <div class="flex-large">
     <section class="mdna">
-    <h1 class="page-title">Bostick/Reed <abbr title="Mitochrondial DNA">mDNA</h1>
+    <h2 class="page-title">Bostick/Reed <abbr title="Mitochrondial DNA">mDNA</h2>
     <article class="dnahead">
          <p>This is the mitochrondial DNA passed down from Moms mother, to Mom, and then on to the Val and Susie. Susie's daughter has this, as well as Kelli's daughter. Randy and I also have this DNA</p>
 

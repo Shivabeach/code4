@@ -1,12 +1,6 @@
 /* Variable */
 /* Mixins */
 /*	1-tools */
-html {
-  box-sizing: border-box; }
-
-*, *::after, *::before {
-  box-sizing: inherit; }
-
 button, [type='button'], [type='reset'], [type='submit'] {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -215,6 +209,12 @@ hr {
   border-top: 0;
   margin: 1.5em 0; }
 
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
 /* 2-basics */
 /* 2-basics body */
 * {
@@ -239,7 +239,7 @@ body, html {
 
 /* basics links */
 a {
-  color: #3D3B3C;
+  color: #527652;
   text-decoration: none;
   transition: 150ms, ease; }
   a:visited {
@@ -431,6 +431,37 @@ article:not(.ancestry) {
   min-height: 13em; }
 
 /* 5-pages */
+/* Media queries for DNA pages */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #mydna body, #ydna body, #boslinage body, #vanlinage body {
+    padding: 0;
+    margin: 0; }
+  #mydna .container, #ydna .container, #boslinage .container, #vanlinage .container {
+    padding: 0;
+    margin: 0; }
+  #mydna .flex-small, #ydna .flex-small, #boslinage .flex-small, #vanlinage .flex-small {
+    display: none; } }
+@media screen and (min-width: 768px) and (max-width: 1023px) and (min-width: 768px) and (max-width: 1023px) {
+  #mydna .page-title, #mydna .heading, #ydna .page-title, #ydna .heading, #boslinage .page-title, #boslinage .heading, #vanlinage .page-title, #vanlinage .heading {
+    font-size: 3em; } }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #mydna .box20, #ydna .box20, #boslinage .box20, #vanlinage .box20 {
+    display: none; } }
+@media screen and (max-width: 767px) {
+  #mydna body, #ydna body, #boslinage body, #vanlinage body {
+    padding: 0;
+    margin: 0; }
+  #mydna .container, #ydna .container, #boslinage .container, #vanlinage .container {
+    padding: 0;
+    margin: 0; }
+  #mydna .flex-small, #ydna .flex-small, #boslinage .flex-small, #vanlinage .flex-small {
+    display: none; } }
+@media screen and (max-width: 767px) and (max-width: 767px) {
+  #mydna .page-title, #mydna .heading, #ydna .page-title, #ydna .heading, #boslinage .page-title, #boslinage .heading, #vanlinage .page-title, #vanlinage .heading {
+    font-size: 3em; } }
+@media screen and (max-width: 767px) {
+  #mydna .box20, #ydna .box20, #boslinage .box20, #vanlinage .box20 {
+    display: none; } }
 
 
 
