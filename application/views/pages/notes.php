@@ -1,7 +1,7 @@
-<body>
+<body id="notes">
   
   <header class="m-main">
-    <h1> <?php echo $head ;?></h></h1>
+    <h1 class="heading"> <?php echo $head ;?></h></h1>
   </header>
   <div class="container">
     <div class="flex1">

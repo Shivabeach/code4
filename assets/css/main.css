@@ -130,7 +130,8 @@ dl {
 
 dt {
   font-weight: 600;
-  margin: 0; }
+  margin: 0;
+  padding: 5px 0; }
 
 dd {
   margin: 0; }
@@ -364,6 +365,9 @@ button:hover, [type="submit"] {
 .not-bold {
   font-weight: 300; }
 
+.fifty {
+  width: 2%; }
+
 article:not(.ancestry) {
   margin: 1em 0; }
 
@@ -433,34 +437,34 @@ article:not(.ancestry) {
 /* 5-pages */
 /* Media queries for DNA pages */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  #mydna body, #ydna body, #boslinage body, #vanlinage body {
+  #mydna body, #ydna body, #boslinage body, #vanlinage body, #notes body, #logs body, #prime body, #van body, #relates body, #topdog body, #bos body {
     padding: 0;
     margin: 0; }
-  #mydna .container, #ydna .container, #boslinage .container, #vanlinage .container {
+  #mydna .container, #ydna .container, #boslinage .container, #vanlinage .container, #notes .container, #logs .container, #prime .container, #van .container, #relates .container, #topdog .container, #bos .container {
     padding: 0;
     margin: 0; }
-  #mydna .flex-small, #ydna .flex-small, #boslinage .flex-small, #vanlinage .flex-small {
+  #mydna .flex-small, #ydna .flex-small, #boslinage .flex-small, #vanlinage .flex-small, #notes .flex-small, #logs .flex-small, #prime .flex-small, #van .flex-small, #relates .flex-small, #topdog .flex-small, #bos .flex-small {
     display: none; } }
 @media screen and (min-width: 768px) and (max-width: 1023px) and (min-width: 768px) and (max-width: 1023px) {
-  #mydna .page-title, #mydna .heading, #ydna .page-title, #ydna .heading, #boslinage .page-title, #boslinage .heading, #vanlinage .page-title, #vanlinage .heading {
+  #mydna .page-title, #mydna .heading, #ydna .page-title, #ydna .heading, #boslinage .page-title, #boslinage .heading, #vanlinage .page-title, #vanlinage .heading, #notes .page-title, #notes .heading, #logs .page-title, #logs .heading, #prime .page-title, #prime .heading, #van .page-title, #van .heading, #relates .page-title, #relates .heading, #topdog .page-title, #topdog .heading, #bos .page-title, #bos .heading {
     font-size: 3em; } }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  #mydna .box20, #ydna .box20, #boslinage .box20, #vanlinage .box20 {
+  #mydna .box20, #ydna .box20, #boslinage .box20, #vanlinage .box20, #notes .box20, #logs .box20, #prime .box20, #van .box20, #relates .box20, #topdog .box20, #bos .box20 {
     display: none; } }
 @media screen and (max-width: 767px) {
-  #mydna body, #ydna body, #boslinage body, #vanlinage body {
+  #mydna body, #ydna body, #boslinage body, #vanlinage body, #notes body, #logs body, #prime body, #van body, #relates body, #topdog body, #bos body {
     padding: 0;
     margin: 0; }
-  #mydna .container, #ydna .container, #boslinage .container, #vanlinage .container {
+  #mydna .container, #ydna .container, #boslinage .container, #vanlinage .container, #notes .container, #logs .container, #prime .container, #van .container, #relates .container, #topdog .container, #bos .container {
     padding: 0;
     margin: 0; }
-  #mydna .flex-small, #ydna .flex-small, #boslinage .flex-small, #vanlinage .flex-small {
+  #mydna .flex-small, #ydna .flex-small, #boslinage .flex-small, #vanlinage .flex-small, #notes .flex-small, #logs .flex-small, #prime .flex-small, #van .flex-small, #relates .flex-small, #topdog .flex-small, #bos .flex-small {
     display: none; } }
 @media screen and (max-width: 767px) and (max-width: 767px) {
-  #mydna .page-title, #mydna .heading, #ydna .page-title, #ydna .heading, #boslinage .page-title, #boslinage .heading, #vanlinage .page-title, #vanlinage .heading {
+  #mydna .page-title, #mydna .heading, #ydna .page-title, #ydna .heading, #boslinage .page-title, #boslinage .heading, #vanlinage .page-title, #vanlinage .heading, #notes .page-title, #notes .heading, #logs .page-title, #logs .heading, #prime .page-title, #prime .heading, #van .page-title, #van .heading, #relates .page-title, #relates .heading, #topdog .page-title, #topdog .heading, #bos .page-title, #bos .heading {
     font-size: 3em; } }
 @media screen and (max-width: 767px) {
-  #mydna .box20, #ydna .box20, #boslinage .box20, #vanlinage .box20 {
+  #mydna .box20, #ydna .box20, #boslinage .box20, #vanlinage .box20, #notes .box20, #logs .box20, #prime .box20, #van .box20, #relates .box20, #topdog .box20, #bos .box20 {
     display: none; } }
 
 

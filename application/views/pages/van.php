@@ -1,6 +1,6 @@
-<body>
+<body id="van">
   <header class="m-main">
-    <h1><?php echo $head;?></h1>
+    <h1 class="heading"><?php echo $head;?></h1>
   </header>
 <div class="container">
   <div class="flex1">

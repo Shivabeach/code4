@@ -1,6 +1,6 @@
-  <body>
+  <body id="prime">
     <header class="m-main">
-      <h1>The Family's Story</h1>
+      <h1 class="heading">The Family's Story</h1>
     </header>
     <div class="container">
       <div class="flex1">

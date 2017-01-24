@@ -1,6 +1,6 @@
-<body>
-  <header>
-    <h1><?php echo $head;?></h1>
+<body id="logs">
+   <header class="m-main">
+    <h1 class="heading"><?php echo $head;?></h1>
   </header>
 <div class="container">
   <div class="flex-large">
@@ -12,8 +12,7 @@
       <?php echo validation_errors('<li class="error">', '</li>');
 
       $attr = [
-        'id'      => 'ajax3',
-        "class"   => "pure-form pure-form-stacked"
+        'id'      => 'ajax3'
       ];
       echo form_open("/checkin/legal", $attr)?>
 <p>
@@ -50,8 +49,8 @@
  <?php
   $attr2 = [
     'style' => 'width: 50%',
-    'id' => 'password2',
-    'name' => 'password2'
+    'id'    => 'password2',
+    'name'  => 'password2'
 ];
    ?>
 <label for="password2"> password2 </label> <br />
@@ -74,9 +73,10 @@
 <p/>
 <?php
 $attr10 = [
-  'id' => 'milky',
+  'id'   => 'milky',
   'name' => 'milky',
-  'type' => 'color'
+  'type' => 'color',
+  'style'=> 'width: 8%'
 ];
 ?>
 <p>
@@ -84,10 +84,10 @@ $attr10 = [
   <?php echo form_input($attr10);?>
 </p>
 
-<div class="pure-controls">
+<div>
   <?php
-  echo '<button type="submit" class="pure-button pure-button-active">Submit</button>';
-  echo '<button type="reset" class="pure-button pure-button-active">Reset</button>';
+  echo '<button type="submit">Submit</button>';
+  echo '<button type="reset">Reset</button>';
   echo form_close();
   ?>
     </fieldset>
