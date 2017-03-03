@@ -4,15 +4,16 @@ if($this->session->userdata('name') == true){
     echo "Hello " .  $this->session->userdata('name') . nbs(3), anchor("Pages/entry", " Enter ");
     echo "<hr>";
 }?>
+
 </article>
 <article>
 <h4 class="centered">Quick Facts</h4>
 <ul>
-  <li> 143 Matched relatives</li>
-  <li> 16,350 Unmatched relatives</li>
-  <li> 16,122 People in the current tree</li>
-  <li> 2033 Photos</li>
-  <li> 503 4th to 8th Cousins</li>
+  <li><i class="icon-hand-right"></i> 172 Matched relatives</li>
+  <li><i class="icon-hand-right"></i> 18,134Unmatched relatives</li>
+  <li><i class="icon-hand-right"></i> 16,426 People in the current tree</li>
+  <li><i class="icon-hand-right"></i> 2176 Photos</li>
+  <li><i class="icon-hand-right"></i> 539 4th to 8th Cousins</li>
 </ul>
 </article>
 <a href="http://van-horn.us/pages/army" style="display: none;">zeal</a>

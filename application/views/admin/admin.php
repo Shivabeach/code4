@@ -6,7 +6,7 @@
   <div class="flex-large">
     <article>
       <h3>Display of visitors to the site</h3>
-      <p>
+      <p> 
         This displays the last 20 visitors to the site
       </p>
       <!-- table here -->

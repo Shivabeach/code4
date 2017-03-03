@@ -1,7 +1,7 @@
-<body>
+<body id="post-entry">
   <header class="m-main">
-    <h1><?php echo $head;?></h1>
-  </header>
+     <h1 class="heading"><?php echo $head;?></h1>
+   </header> 
 <div class="container">
   <div class="flex-large">
     <fieldset><legend>Post Entry Form</legend>
@@ -105,7 +105,7 @@
         <br>
         Total word Count : <span id="display_count">0</span>
       </article>
-      <article class="small">
+      <article>
         <?php foreach($getlist as $row)
         {
             $id = "forms/fill_form/$row->id";
@@ -119,12 +119,7 @@
         echo $this->table->generate();
         ?>
       </article>
-      <article>
-        <p>
-          <pre>< button class="grab">Read More< /button></pre>
-        </p>
 
-      </article>
       <article>
         <?php $this->load->file(APPPATH . "/views/pages/includes/side1.php"); ?>
       </article>

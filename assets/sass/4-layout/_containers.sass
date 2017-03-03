@@ -8,27 +8,26 @@
 	-ms-flex-wrap: wrap
 	flex-wrap: wrap
 	width: 80%
-	margin: 0 auto
+	+margin(0 auto)
 	background: transparent
 	min-height: 100%
 
 	+tablet
-		background: orange
+		background: inherit
 		margin: 10px
 		width: 100%
 
 	+mobile
-		background: green
-		margin: 10px
+		background: inherit
+		margin-top: 2em
 		width: 100%
 
 //example media call
 
 //layout left flex
-.flex1 
+.flex1
 	flex: 1
 	background: transparent
-	border-left: 1px dotted black
 	padding: .5rem
 
 	+tablet
@@ -39,8 +38,6 @@
 
 //layout center flex
 .flex-large
-	-webkit-box-flex: 3
-	-ms-flex: 3
 	flex: 3
 	background: transparent
 	padding: 0.5rem
@@ -49,9 +46,7 @@
 		display: flex
 
 //right side flex
-.flex-small 
-	-webkit-box-flex: 1
-	-ms-flex: 1
+.flex-small
 	flex: 1
 	padding: 0 0.5rem
 	background: transparent

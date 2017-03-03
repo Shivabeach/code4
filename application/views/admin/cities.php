@@ -1,5 +1,5 @@
 <body>
-  <header class="m-main">
+  <header>
     <h1><?php echo $head;?></h1>
   </header>
 <div class="container">

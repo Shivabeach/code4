@@ -4,8 +4,6 @@
 	justify-content: $value
 	align-items: $value2
 
-
-
 //media queries
 
 =desktop
@@ -16,9 +14,34 @@
 	@media screen and (min-width: $tablet) and (max-width: $desktop - 1px)
 		@content
 
+
 =mobile
 	@media screen and (max-width: $tablet - 1px)
 		@content
 
 =butt($border)
 	border-radius: $border
+
+//add background image url
+//add background image size example 250px 88px
+=retina
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
+		@content
+
+=border($pixel, $type, $color, $rad)
+	border-width: $pixel
+	border-style: $type
+	border-color: $color
+	border-radius: $rad
+
+//example
+@function set-notification-text-color($color) 
+	@if (lightness($color) > 50) 
+		@return #000000 // Lighter backgorund, return dark color
+	@else 
+		@return #ffffff // Darker background, return light color
+	
+// example
+//.notification-confirm 
+//	background: $notification-confirm
+//	color: set-notification-text-color($notification-confirm)

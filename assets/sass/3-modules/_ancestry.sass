@@ -6,11 +6,13 @@
 	margin: 2em 1em
 
 	&--container
-		border: 1px dotted orange
-		
-	
+		+border(1px, dotted, orange, 10px )
+
+
 	&--ancestryTitle
-		font-weight: 200
+		font-weight: 400
+		font-family: soriasoria
+		letter-spacing: 2px 
 
 
 	&--ancestryContent
@@ -23,5 +25,4 @@
 
 	&--ancestryDate
 		font-weight: 200
-		
-		+center(flex-end, flex-end)
+		float: right

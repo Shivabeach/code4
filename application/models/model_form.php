@@ -30,6 +30,7 @@ class Classname extends CI_Model{
       return $query->result();
     }
 	}
+  // to post updates list
   function get_record()
   {
     $this->db->select('id, title, status');

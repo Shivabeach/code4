@@ -5,7 +5,7 @@
 <div class="container" id="top">
   <div class="flex-large">
     <section class="ydna">
-      <h1 class="page-title">VanHorn Y-DNA</h1>
+      <h2 class="page-title">VanHorn Y-DNA</h2>
 
       <article class="dnahead">
         <p>This is the DNA passed from Dad to Randy and I. This is traceable to the original time of the first ancestor. All males who are alive started with this man and his sons</p>

@@ -162,5 +162,40 @@ public function fill_form()
     }
   }
 
+  public function family()
+  {
+    //male female family relationship relative level year branch2 country  comment
+    //$this->is_logged_in();
+    $data = [
+      'male'         => html_escape(trim($this->input->post('male'))),
+      'female'       => html_escape(trim($this->input->post('female'))),
+      'family'       => html_escape(trim($this->input->post('family'))),
+      'relationship' => html_escape(trim($this->input->post('relationship'))),
+      'relative'     => html_escape(trim($this->input->post('relative'))),
+      'level'        => html_escape(trim($this->input->post('level'))),
+      'year'         => html_escape(trim($this->input->post('level'))),
+      'branch2'      => html_escape(trim($this->input->post('branch2'))),
+      'country'      => html_escape(trim($this->input->post('country'))),
+      'comment'      => html_escape(trim($this->input->post('comment')))
+    ];
+    $this->form_validation->set_rules('male', 'Male', 'required|alpha_numeric_spaces');
+    $this->form_validation->set_rules('female', 'female', 'required|alpha_numeric_spaces');
+    $this->form_validation->set_rules('family', 'family', 'required|alpha_numeric_spaces');
+    $this->form_validation->set_rules('relationship', 'Relationship', 'required');
+    $this->form_validation->set_rules('relative', 'Relative', 'required|alpha_numeric_spaces');
+    $this->form_validation->set_rules('level', 'level', 'required|numeric');
+    $this->form_validation->set_rules('year', 'year', 'required|numeric|max_length[4]');
+    $this->form_validation->set_rules('branch2', 'branch2', 'required|alpha_numeric_spaces');
+    $this->form_validation->set_rules('country', 'country', 'required|alpha_numeric_spaces');
+    $this->form_validation->set_rules('comment', 'comment', 'min_length[8]');
+
+    if( $this->form_validation->run() == FALSE) {
+      echo validation_errors();
+    }else
+    {
+      $this->db->insert('primary', $data);
+      echo "grand shit";
+    }
+  }// end of family
 
 } //end of class

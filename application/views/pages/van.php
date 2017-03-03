@@ -14,9 +14,10 @@
         <article class="ancestry">
           <h3 class="ancestry--ancestryTitle item"><?php echo $row->title;?></h3>
           <?php echo $slug; ?>
-          <div class="ancestry--ancestryContent item"><?php echo $this->typography->auto_typography($content);?> 
+          <button class="grab">Read</button>
+          <div class="ancestry--ancestryContent item"><?php echo $this->typography->auto_typography($content);?></div>
           <h6 class="ancestry--ancestryDate"><?php echo "Creation " . html_escape($row->date), nbs(5), "Last Updated " . html_escape($row->last_date);?></h6>
-          </div>
+          
         </article>
       </div>
     <?php endforeach;?>

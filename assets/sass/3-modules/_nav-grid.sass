@@ -1,4 +1,5 @@
 @charset "UTF-8"
+
 // lower nav grif
 .nav-grid
 	-webkit-box-flex: 1
@@ -16,16 +17,17 @@
 .m-left-nav
 	display:flex
 
-	&--heading //h4 section title
+	flex-direction: column
+
+	&--heading
 		text-align: center
 
-	&--content //li
+	&--content
 		padding: 5px
 
 //lower footer navigation
 
 .footwrapper
-	
 	display: flex
 	flex-direction: row
 	align-items: stretch
@@ -34,13 +36,27 @@
 
 .m-nav-grid
 	flex: 1 1 0
-	
+
 	&--title
 		color: red
 		text-align: center
+		text-shadow: 1px 1px 1px $border-shadow
 
 	&--center
-		padding-left: 4em
+		display: flex
+		flex-direction: column
+
+		+center(center, center)
 
 	&--listpad
 		padding: 3px
+
+		+tablet
+			font-size: 0.85rem
+
+
+		+mobile
+			font-size: 0.85rem
+
+.box20
+	color: $red1

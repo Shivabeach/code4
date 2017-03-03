@@ -1,5 +1,4 @@
 "use strict";
-
 (function() {
     'use strict';
     function showSize() {
@@ -11,17 +10,26 @@
     showSize();
 })();
 
+// $(function() {
+//     "use strict";
+//     $('A[rel="external"]')
+//         .click(function() {
+//             window.open($(this).attr('href'),
+//                 rel = "noopener noreferrer");
+//             return false;
+//             var newWnd = window.open();
+//             newWnd.opener = null;
+//         });
+// });
 $(function() {
-    "use strict";
-    $('A[rel="external"]')
-        .click(function() {
-            window.open($(this).attr('href'),
-                rel = "noopener noreferrer");
-            return false;
-            var newWnd = window.open();
-            newWnd.opener = null;
-        });
+  "use strict";
+  $('A[rel="external"]')
+  .click( function() {
+  window.open( $(this).attr('href') );
+  return false;
+  });
 });
+
 // https://www.youtube.com/watch?v=GrycH6F-ksY
 // Codecourse ajax script below
 $(function() {
@@ -76,11 +84,9 @@ for (var i = 0; i < document.links.length; i++) { /*this highlights the current 
         document.links[i].className = 'current';
     }
 }
-
 $(function() {
     $("#date").datepicker();
 });
-
 $(function() {
     $("#last_date").datepicker();
 });
@@ -93,8 +99,7 @@ $(function() {
   "use strict";
     $(".ancestry--ancestryContent").hide();
     $('button.grab').on('click', function() {
-        $(this).next('.ancestry--ancestryContent').slideToggle('slow');
-        $(this).toggleClass('opa');
+        $(this).next('div.ancestry--ancestryContent').toggle('slow');
     });
 })();
 
