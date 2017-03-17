@@ -197,5 +197,29 @@ public function fill_form()
       echo "grand shit";
     }
   }// end of family
+  /**
+   * form for filling in data and reading sources
+   */
 
+  public function sources()
+  {
+    $data = [
+      'family' => html_escape(trim($this->input->post('family'))),
+      'name'   => html_escape(trim($this->input->post('name'))),
+      'url'    => trim($this->input->post('url')),
+      'type'   => html_escape(trim($this->input->post('type')))
+    ];
+    $this->form_validation->set_rules('family', 'Family', 'required|alpha_numeric_spaces|max_length[15]');
+    $this->form_validation->set_rules('name', 'Name', 'required|alpha_numeric_spaces');
+    $this->form_validation->set_rules('url', 'URL', 'required|valid_url');
+    $this->form_validation->set_rules('type', 'Type', 'required|alpha_numeric_spaces');
+
+    if( $this->form_validation->run() == false)
+      {
+        echo validation_errors();
+      }else {
+        $this->db->insert('sources', $data);
+        echo "Job Was Done";
+      }
+    }
 } //end of class

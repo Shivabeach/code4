@@ -10,25 +10,25 @@
     showSize();
 })();
 
+ $(function() {
+     "use strict";
+     $('A[rel="external"]')
+         .click(function() {
+             window.open($(this).attr('href'),
+                 rel = "noopener noreferrer");
+             return false;
+             var newWnd = window.open();
+             newWnd.opener = null;
+         });
+ });
 // $(function() {
-//     "use strict";
-//     $('A[rel="external"]')
-//         .click(function() {
-//             window.open($(this).attr('href'),
-//                 rel = "noopener noreferrer");
-//             return false;
-//             var newWnd = window.open();
-//             newWnd.opener = null;
-//         });
+//   "use strict";
+//   $('A[rel="external"]')
+//   .click( function() {
+//   window.open( $(this).attr('href') );
+//   return false;
+//   });
 // });
-$(function() {
-  "use strict";
-  $('A[rel="external"]')
-  .click( function() {
-  window.open( $(this).attr('href') );
-  return false;
-  });
-});
 
 // https://www.youtube.com/watch?v=GrycH6F-ksY
 // Codecourse ajax script below

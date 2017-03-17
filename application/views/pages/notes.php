@@ -42,7 +42,10 @@
               Thomas Stoddard(1744 - 1814. Private. Revolutionary War Cayuga Co NY 41 1775</dd>
             <dd class="m-listContainer--ddstyle">
               Elisha Stoddard(1750 - 1788. Corporal. Continental Troops, Connecticut. French and Indian War</dd>
-            <dd class="m-listContainer--ddstyle">Harlan J   Sholes 1942 - 12/15/1945  WW2. Aviation Cadet. Sergeant Michigan Army  Air Corps</dd>
+            <dd class="m-listContainer--ddstyle">Harlan J Sholes 1942 - 12/15/1945  WW2. Aviation Cadet. Sergeant Michigan Army  Air Corps</dd>
+            <dd class="m-listContainer--ddstyle">Col Ebenezer Condict. Continental Army, died from smallpox in service. 1735-1777</dd>
+            <dd class="m-listContainer--ddstyle">Joseph Frank Steward. PVT US MARINE CORPS WORLD WAR II</dd>
+
 
         </dl>
       </article>

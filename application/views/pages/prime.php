@@ -27,8 +27,7 @@
             <p>
               Dad's family is much more on the side of Denmark, Germany, French, Netherlands and Sweden.
             </p>
-            <p>Our deep ancestry is shown on the <?php echo $van;?> and <?php echo $bos;?> pages.</p>
-
+          
             <h6 class="ancestry--ancestryDate">2/20/2016</h6>
         </div>
         </article>
@@ -53,9 +52,9 @@
         </div>
       <?php endforeach;?>
           <?php echo $this->pagination->create_links();?>
-      
+
       </div>
-      
+
       <div class="flex-small">
         <section class="wrapper">
             <?php include(APPPATH . "/views/pages/includes/side.php");  ?>

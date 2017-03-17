@@ -1,62 +1,63 @@
 @charset "UTF-8"
 
+/*more
 // lower nav grif
 .nav-grid
-	-webkit-box-flex: 1
-	-ms-flex: 1
-	flex: 1
+  -webkit-box-flex: 1
+  -ms-flex: 1
+  flex: 1
 
 .box1
-	@extend .nav-grid
+  @extend .nav-grid
 
 .box2
-	@extend .nav-grid
+  @extend .nav-grid
 
 //left side nav
 
 .m-left-nav
-	display:flex
+  display:flex
 
-	flex-direction: column
+  flex-direction: column
 
-	&--heading
-		text-align: center
+  &--heading
+    text-align: center
 
-	&--content
-		padding: 5px
+  &--content
+    padding: 5px
 
 //lower footer navigation
 
 .footwrapper
-	display: flex
-	flex-direction: row
-	align-items: stretch
-	flex-wrap: wrap
-	justify-content: flex-end
+  display: flex
+  flex-direction: row
+  align-items: stretch
+  flex-wrap: wrap
+  justify-content: flex-end
 
 .m-nav-grid
-	flex: 1 1 0
+  flex: 1 1 0
 
-	&--title
-		color: red
-		text-align: center
-		text-shadow: 1px 1px 1px $border-shadow
+  &--title
+    color: red
+    text-align: center
+    text-shadow: 1px 1px 1px $border-shadow
 
-	&--center
-		display: flex
-		flex-direction: column
+  &--center
+    display: flex
+    flex-direction: column
 
-		+center(center, center)
+    +center(center, center)
 
-	&--listpad
-		padding: 3px
+  &--listpad
+    padding: 3px
 
-		+tablet
-			font-size: 0.85rem
+    +tablet
+      font-size: 0.85rem
 
 
-		+mobile
-			font-size: 0.85rem
+    +mobile
+      font-size: 0.85rem
 
 .box20
-	color: $red1
+  color: $red1

@@ -6,7 +6,7 @@
   <div class="flex-large">
     <article>
       <h3>Display of visitors to the site</h3>
-      <p> 
+      <p>
         This displays the last 20 visitors to the site
       </p>
       <!-- table here -->
@@ -15,7 +15,7 @@
       foreach($visitor as $row)
       {
         $subject = $row->addr;
-        $pattern = '/\w+.(com|net|co\.kr|be|uk|de|edu|us)/';
+        //$pattern = '/\w+.(com|net|co\.kr|be|uk|de|edu|us)/';
         preg_match("/(?:.[a-z]+.[a-z]+.)\w+.(com|net|co\.kr|be|de|ua|ru|br|uk|cn|link|org|sc|pl)/", $subject, $matches);
         $addr = $matches[0];
         $date = unix_to_human($row->date);
@@ -27,7 +27,7 @@
           $addr,
           $row->page,
           $row->region . " " . $row->country
-        );
+        ); 
       }
       echo $this->table->generate();
        ?>

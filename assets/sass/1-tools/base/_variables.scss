@@ -2,13 +2,13 @@
 $mobile: 568px;
 $tablet: 768px;
 $desktop: 1024px;
- 
 
 $base-font-family: $font-stack-helvetica;
 $heading-font-family: $font-stack-consolas;
 
 
-$base-font-size: 1em;
+$base-font-size: 1.1em;
+$em-base: $base-font-size;
 
 
 $base-line-height: 1.5;

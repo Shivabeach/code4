@@ -46,6 +46,9 @@
             <li class="m-left-nav--content"><i class="fa fa-link" aria-hidden="true"></i>
                 <?php echo anchor("pages/relatives", "Family Connections"); ?>
             </li>
+            <li class="m-left-nav--content"><i class="fa fa-link" aria-hidden="true"></i>
+                <?php echo anchor("pages/reading", "Reading Sources"); ?>
+            </li>
         </ul>
         <a href="http://van-horn.us/pages/army"><span style="display: none;">zeal</span></a>
     </article>

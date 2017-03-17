@@ -7,6 +7,10 @@
     <?php $this->load->view("nav/navigate");?>
   </div>
   <div class="flex-large">
+    <article class="ancestry">
+    <h2>Family Trees</h2>
+    <p>The linages shown below come from our family tree, as itis filled out at Ancestry.com. This is a view across the spectrum of the names and families that make up who we are.</p>
+  </article>
     <article id="tabs">
     <ul>
       <li><a href="#tabs-1">VanHorn</a></li>
@@ -23,6 +27,7 @@
       <li><a href="#tabs-12">Thomas Ferguson</a></li>
       <li><a href="#tabs-13">William Smith</a></li>
       <li><a href="#tabs-14">Gerrit Couwenhoven</a></li>
+      <li><a href="#tabs-15">Edward de Vere</a></li>
     </ul>
     <article id="tabs-1">
       <h3>Matthys Corneliussen </h3>
@@ -79,6 +84,10 @@
     <article id="tabs-14">
       <h3>Gerrit Couwenhoven </h3>
       <?php include("gerrit.html");?>
+    </article>
+    <article id="tabs-15">
+      <h3>Edward de Vere, 17th Earl of Oxford </h3>
+      <?php include("devere.html");?>
     </article>
 
   </article> <!-- end of tabs -->

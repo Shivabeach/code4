@@ -1,12 +1,14 @@
 #{$all-buttons} {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-color: $action-color;
   border: 0;
   border-radius: $base-border-radius;
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: $base-font-family;
+  font-family: 'Arsenal', sans-serif;
   font-size: $base-font-size;
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
@@ -14,8 +16,12 @@
   padding: $small-spacing $base-spacing;
   text-align: center;
   text-decoration: none;
+  -webkit-transition: background-color $base-duration $base-timing;
   transition: background-color $base-duration $base-timing;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   vertical-align: middle;
   white-space: nowrap;
 

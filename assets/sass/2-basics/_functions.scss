@@ -1,0 +1,12 @@
+/*example*/
+@function text-contrast($background) {
+	@if (lightness($background) > 50) {
+		@return lighten($background, 70%) // Lighter backgorund, return dark color;
+	}@else {
+		@return darken($background, 90%) // Darker background, return light color;
+  }
+	}
+/* example*/
+/*.notification-confirm*/
+/*	background: $notification-confirm*/
+/*	color: set-notification-text-color($notification-confirm)*/

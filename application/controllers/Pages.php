@@ -12,7 +12,7 @@ class Pages extends CI_Controller
     $this->load->library('session');
     $this->load->model('Test');
   }
-/**
+/** 
  * [index description]
  * @method index
  * @return return database query [description]
@@ -323,4 +323,26 @@ class Pages extends CI_Controller
     $this->load->view("admin/admin2");
     $this->load->view("pages/footer/footer");
     }
+
+    public function reading()
+    {
+      $data = [];
+      $data['head'] = "Reading Sources";
+      $data['title'] = "Reading and Data Sources";
+
+      $data['main_content'] = 'pages/sources';
+      $this->load->view('pages/includes/template', $data);
+    }
+    public function read()
+    {
+      $this->is_logged_in();
+      $data['head']         = "Reading Sources Form";
+      $data['title']        = "Reading Sources";
+      $data['main_content'] = "admin/reading_form";
+      $this->load->view('pages/includes/template', $data);
+    }
+
+
 } //end of file
+/* End of file ${TM_FILENAME:${1/(.+)/lPages.php/}} */
+/* Location: ./${TM_FILEPATH/.+((?:application).+)/Sources/:application/controllers/${1/(.+)/lPages.php/}} */

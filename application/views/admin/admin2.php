@@ -7,7 +7,7 @@
     <article>
       <h3>Posts</h3>
     </article>
-	<article>
+	  <article>
         <?php foreach($getlist as $row)
         {
             $id = "forms/fill_form/$row->id";
@@ -21,8 +21,7 @@
         }
         echo $this->table->generate();
         ?>
-
-  </article>
+    </article>
   </div>
 
 	<div class="flex-small">

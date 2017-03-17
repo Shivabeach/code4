@@ -1,7 +1,7 @@
 <body id="post-entry">
   <header class="m-main">
      <h1 class="heading"><?php echo $head;?></h1>
-   </header> 
+   </header>
 <div class="container">
   <div class="flex-large">
     <fieldset><legend>Post Entry Form</legend>
@@ -53,7 +53,6 @@
       "id"    => "date",
       "name"  => "date",
       "class" => "datestamp",
-      "class" => "pure-form pure-input-1-2",
       'value' => set_value('date')
     ];
 
@@ -105,21 +104,6 @@
         <br>
         Total word Count : <span id="display_count">0</span>
       </article>
-      <article>
-        <?php foreach($getlist as $row)
-        {
-            $id = "forms/fill_form/$row->id";
-            $this->table->add_row(
-            anchor($id, $row->id),
-            $row->title,
-            $row->parent,
-            $row->status
-            );
-        }
-        echo $this->table->generate();
-        ?>
-      </article>
-
       <article>
         <?php $this->load->file(APPPATH . "/views/pages/includes/side1.php"); ?>
       </article>

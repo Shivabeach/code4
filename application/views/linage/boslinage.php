@@ -7,6 +7,10 @@
     <?php $this->load->view("nav/navigate");?>
   </div>
   <div class="flex-large">
+    <article class="ancestry">
+    <h2>Family Trees</h2>
+    <p>The linages shown below come from our family tree, as itis filled out at Ancestry.com. This is a view across the spectrum of the names and families that make up who we are.</p>
+  </article>
     <article id="tabs">
     <ul>
       <li><a href="#tabs-1">Reeds</a></li>

@@ -57,10 +57,5 @@ public function track()
       $this->db->where('ip', $ip)->update('visit', $attr1);
     }
   }
-
-
-
-
-
 }/* End of file ${TM_FILENAME:${1/(.+)/lTracker.php/}} */
 /* Location: ./${TM_FILEPATH/.+((?:application).+)/Tracker/:application/models/${1/(.+)/lTracker.php/}} */

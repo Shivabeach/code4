@@ -1,41 +1,42 @@
 @charset "UTF-8"
 
-/* main top header */
+/* main top header
 .m-main
-	display: -webkit-box
-	display: -ms-flexbox
-	display: flex
-	width: 80%
-	margin: 0 auto
-	-ms-flex-wrap: wrap
-	flex-wrap: wrap
-	height: 12em
+  +mobile
+    height: 10em
 
-	+center(center, center)
-
-	+tablet
-		height: 10em
-
-		+center(center, flex-end)
+    +center(center, flex-end)
 
 
-	+mobile
-		height: 10em
+  +tablet
+    height: 10em
 
-		+center(center, flex-end)
+    +center(center, flex-end)
 
 
-	&--head
-		font-family: $font-stack-consolas
+  +center(center, center)
 
-		+tablet
-			font-size: $base-font-size * 3
+  display: -webkit-box
+  display: flex
+  display: -ms-flexbox
+  flex-wrap: wrap
+  margin: 0 auto
+  width: 80%
+  height: 12em
+  -ms-flex-wrap: wrap
 
-			h1
-				margin-bottom: 0
+  &--head
+    font-family: $font-stack-consolas
 
-		+mobile
-			font-size: $base-font-size * 2
+    +tablet
+      font-size: $base-font-size * 3
 
-			h1
-				margin-bottom: 0
+      h1
+        margin-bottom: 0
+
+
+    +mobile
+      font-size: $base-font-size * 2
+
+      h1
+        margin-bottom: 0

@@ -28,7 +28,9 @@ AddType application/x-httpd-php .html
  <IfModule mod_autoindex.c>
     Options -Indexes
 </IfModule>
-
+#
+Header set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+#
 <FilesMatch "(^#.*#|\.(bak|config|dist|fla|in[ci]|log|psd|sh|sql|sw[op])|~)$">
 #
     # Apache < 2.3
