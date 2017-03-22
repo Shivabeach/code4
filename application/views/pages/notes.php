@@ -28,6 +28,9 @@
             <dd class="m-listContainer--ddstyle">
               <p>Our 2nd Great Uncle who died at Gettysburg, was commanded by none other than the youngest general in the army, George Armstrong Custer.</p>
            </dd>
+           <dt class="m-listContainer--dtstyle">Alonzo Prestage</dt>
+             <dd class="m-listContainer--ddstyle">Alonzo Prestage was baptized a member of the Reorganized Church of Jesus Christ of Latter Day Saints on 16 May 1887 at Deerfield, Lapier, Michigan, by J. A. Carpenter. He was ordained a deacon on 5 August 1888 by Andrew Barr. He attended the Five Lakes, Michigan Branch.</dd>
+
           <dt class="m-listContainer--dtstyle">Graduates</dt>
             <dd class="m-listContainer--ddstyle">Sir William Browne - Graduate of Cambridge University Approx. 1580</dd>
             <dd class="m-listContainer--ddstyle">Anthony Stoddard(1559 - 1637) - Oxford University</dd>
@@ -45,6 +48,7 @@
             <dd class="m-listContainer--ddstyle">Harlan J Sholes 1942 - 12/15/1945  WW2. Aviation Cadet. Sergeant Michigan Army  Air Corps</dd>
             <dd class="m-listContainer--ddstyle">Col Ebenezer Condict. Continental Army, died from smallpox in service. 1735-1777</dd>
             <dd class="m-listContainer--ddstyle">Joseph Frank Steward. PVT US MARINE CORPS WORLD WAR II</dd>
+            <dd class="m-listContainer--ddstyle">Alonzo Prestage - Enlisted in Company C, Michigan 10th Cavalry Regiment on 23 Oct 1863.Promoted to Full Sergeant on 01 Sep 1865.Mustered out on 11 Nov 1865 at Memphis, TN. 2nd Great Uncle</dd>
 
 
         </dl>

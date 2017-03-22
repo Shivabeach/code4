@@ -65,7 +65,7 @@ textarea {
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 3px;
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.6);
   box-sizing: border-box;
   margin-bottom: 0.75em;
   padding: 0.5em;
@@ -76,7 +76,7 @@ textarea {
     border-color: #b1b1b1; }
   [type='color']:focus, [type='date']:focus, [type='datetime']:focus, [type='datetime-local']:focus, [type='email']:focus, [type='month']:focus, [type='number']:focus, [type='password']:focus, [type='search']:focus, [type='tel']:focus, [type='text']:focus, [type='time']:focus, [type='url']:focus, [type='week']:focus, input:not([type]):focus, textarea:focus {
     border-color: #1565c0;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(18, 89, 169, 0.7);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.6), 0 0 5px rgba(18, 89, 169, 0.7);
     outline: none; }
   [type='color']:disabled, [type='date']:disabled, [type='datetime']:disabled, [type='datetime-local']:disabled, [type='email']:disabled, [type='month']:disabled, [type='number']:disabled, [type='password']:disabled, [type='search']:disabled, [type='tel']:disabled, [type='text']:disabled, [type='time']:disabled, [type='url']:disabled, [type='week']:disabled, input:not([type]):disabled, textarea:disabled {
     background-color: #f2f2f2;
@@ -575,12 +575,14 @@ article:not(.ancestry) {
     .container {
       background: inherit;
       margin: 10px;
-      width: 100%; } }
+      width: 100%;
+      font-size: 1em; } }
   @media screen and (max-width: 767px) {
     .container {
       background: inherit;
       margin-top: 2em;
-      width: 100%; } }
+      width: 100%;
+      font-size: 1em; } }
 
 .flex1 {
   -webkit-flex: 1;
