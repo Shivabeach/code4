@@ -6,7 +6,6 @@ button, [type='button'], [type='reset'], [type='submit'] {
   appearance: none;
   background-color: #1565c0;
   border: 0;
-  border-radius: 3px;
   color: #fff;
   cursor: pointer;
   display: inline-block;
@@ -486,9 +485,6 @@ a {
     font-weight: 200;
     float: right; }
 
-button:hover, [type="submit"] {
-  border-radius: 15px; }
-
 .small {
   font-size: 0.75em;
   line-height: 1.38; }
@@ -557,6 +553,10 @@ article:not(.ancestry) {
   width: 23.5%; }
   .downer:nth-child(4n) {
     margin-right: 0; }
+
+.submit, .reset {
+  padding: 5px;
+  border-radius: 10px; }
 
 /* 4-Layout */
 .container {

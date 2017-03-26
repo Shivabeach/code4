@@ -1,13 +1,17 @@
 @charset "UTF-8"
 
 .grab
-	background: $button
-	color:      #6263B2
-	padding:    0.5em 1em
-	z-index:    1
+  background: $button
+  color: #6263B2
+  padding: 0.5em 1em
+  z-index: 1
 
-	+butt(10px)
-
+  +butt(10px)
 
 .downer
-	+grid(4, 2%)
+  +grid(4, 2%)
+
+.submit, .reset
+  padding: 5px
+
+  +butt(10px)

@@ -24,6 +24,8 @@
             <p>Lucy Thompson is our great Grandmother, the mother of Mom's father Andrew Bostick. We knew she was born 29/04/1842 in New York. She passed away on April 8th, 1893 in Millington after having 10 children. </p>
             <p>I had no history of her until I was researching some census documents and came across her fathers name. I entered that into Ancestry and that got me her mothers name. Her father was Sherman Bradley Thompson, and her mother was Sarah Ann (Unknown). Her grandfather was John Thompson 1778 - 1850. Her mother and father both come from Windham Vermont. Her Thompson grandfather was from New Hampshire. Lucy's Grandmother was Lavina W Pierce. She was from Vermont. Lavina's father(Lucys Great Grandfather) was Sherman Pierce, born 1770 in Connecticutt, and died in 1854.</p>
             </dd>
+            <dt class="m-listContainer--dtstyle">Henry Michael Clay</dt>
+              <dd class="m-listContainer--ddstyle">Henry’s cremated remains were never taken after his death and are still available at the Oregon State Hospital to be claimed by anyone who is related. More information is available at http://www.oregon.gov/oha/amh/osh/pages/cremains.aspx A book by David Maisel and a documentary by Ondi Timoner & Robert James, both entitled "Library of Dust" also provide more information. 2nd Great Uncle VanHorn side. Died 1948 </dd>
           <dt class="m-listContainer--dtstyle">Jonathon Cummings Sholes</dt>
             <dd class="m-listContainer--ddstyle">
               <p>Our 2nd Great Uncle who died at Gettysburg, was commanded by none other than the youngest general in the army, George Armstrong Custer.</p>
