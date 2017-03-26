@@ -419,13 +419,19 @@ a {
   justify-content: flex-end; }
 
 .m-nav-grid {
-  -webkit-flex: 1 1 0;
-  -ms-flex: 1 1 0px;
-  flex: 1 1 0; }
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
   .m-nav-grid--title {
     color: red;
     text-align: center;
     text-shadow: 1px 1px 1px #D2E6C9; }
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+      .m-nav-grid--title {
+        text-align: left; } }
+    @media screen and (max-width: 767px) {
+      .m-nav-grid--title {
+        text-align: left; } }
   .m-nav-grid--center {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -433,20 +439,17 @@ a {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center; }
+    padding-left: 40%; }
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+      .m-nav-grid--center {
+        font-size: 0.85rem;
+        padding-left: 5px; } }
+    @media screen and (max-width: 767px) {
+      .m-nav-grid--center {
+        font-size: 0.85rem;
+        padding-left: 5px; } }
   .m-nav-grid--listpad {
     padding: 3px; }
-    @media screen and (min-width: 768px) and (max-width: 1023px) {
-      .m-nav-grid--listpad {
-        font-size: 0.85rem; } }
-    @media screen and (max-width: 767px) {
-      .m-nav-grid--listpad {
-        font-size: 0.85rem; } }
 
 .box20 {
   color: #ffe3e3; }

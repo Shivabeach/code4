@@ -36,28 +36,36 @@
   justify-content: flex-end
 
 .m-nav-grid
-  flex: 1 1 0
+  flex: 1
 
   &--title
     color: red
     text-align: center
     text-shadow: 1px 1px 1px $border-shadow
 
+    +tablet
+      text-align: left
+
+
+    +mobile
+      text-align: left
+
   &--center
     display: flex
     flex-direction: column
-
-    +center(center, center)
-
-  &--listpad
-    padding: 3px
+    padding-left: 40%
 
     +tablet
       font-size: 0.85rem
+      padding-left: 5px
 
 
     +mobile
       font-size: 0.85rem
+      padding-left: 5px
+
+  &--listpad
+    padding: 3px
 
 .box20
   color: $red1
