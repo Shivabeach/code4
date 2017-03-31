@@ -189,7 +189,7 @@ h6 {
   margin: 0 0 0.75em; }
 
 p {
-  margin: 0.75em 0; }
+  margin: calc(1em + 0.5vw) 0; }
 
 hr {
   border-bottom-width: 1px;
@@ -245,7 +245,7 @@ body, html {
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
   overflow: auto;
-  font-size: 1.1em;
+  font-size: calc(18px + 0.25vw);
   background: -webkit-linear-gradient(#CDE4CA, #fff3bf, #ffe8cc);
   background: linear-gradient(#CDE4CA, #fff3bf, #ffe8cc); }
 

@@ -222,4 +222,36 @@ public function fill_form()
         echo "Job Was Done";
       }
     }
+//name birth death buried state city
+    public function bury()
+    {
+      $data = [
+        'name'   => html_escape(trim($this->input->post('name'))),
+        'birth'  => html_escape(trim($this->input->post('birth'))),
+        'death'  => html_escape(trim($this->input->post('death'))),
+        'buried' => html_escape(trim($this->input->post('buried'))),
+        'state'  => html_escape(trim($this->input->post('state'))),
+        'city'   => html_escape(trim($this->input->post('city')))
+      ];
+
+      $this->form_validation->set_rules('name', 'Name', 'required|alpha_numeric_spaces|max_length[50]');
+
+      $this->form_validation->set_rules('birth', 'Birth', 'numeric|max_length[4]');
+
+      $this->form_validation->set_rules('death', 'Death', 'numeric|max_length[4]');
+
+      $this->form_validation->set_rules('buried', 'Buried', 'required|alpha_numeric_spaces|max_length[50]');
+
+      $this->form_validation->set_rules('state', 'state', 'required|alpha_numeric_spaces|max_length[50]');
+
+      $this->form_validation->set_rules('city', 'City', 'required|alpha_numeric_spaces|max_length[50]');
+
+      if( $this->form_validation->run() == false)
+        {
+          echo validation_errors();
+        }else {
+          $this->db->insert('cemetary', $data);
+          echo "Job Was Done";
+        }
+    }
 } //end of class

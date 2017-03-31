@@ -8,6 +8,7 @@
     <li><?php echo anchor("pages/family", "Family Entry"); ?></li>
     <li><?php echo anchor("pages/lists", "Post Listing"); ?></li>
     <li><?php echo anchor("pages/read", "Data Form"); ?></li>
+    <li><?php echo anchor("pages/buried", "Cemetarys"); ?></li>
     <li><?php echo anchor("", "Home"); ?></li>
     <li><?php echo anchor("pages/map", "Ancestoral Map"); ?></li>
   </ul>

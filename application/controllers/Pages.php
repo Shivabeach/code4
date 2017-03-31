@@ -12,7 +12,7 @@ class Pages extends CI_Controller
     $this->load->library('session');
     $this->load->model('Test');
   }
-/** 
+/**
  * [index description]
  * @method index
  * @return return database query [description]
@@ -339,6 +339,15 @@ class Pages extends CI_Controller
       $data['head']         = "Reading Sources Form";
       $data['title']        = "Reading Sources";
       $data['main_content'] = "admin/reading_form";
+      $this->load->view('pages/includes/template', $data);
+    }
+
+    public function buried()
+    {
+      $this->is_logged_in();
+      $data['head']         = "Cemetary Record";
+      $data['title']        = "Cemetary Record";
+      $data['main_content'] = "admin/cemetary";
       $this->load->view('pages/includes/template', $data);
     }
 
