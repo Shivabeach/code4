@@ -1,6 +1,6 @@
 <body>
-  <header>
-    <h1><?php echo $head;?></h1>
+  <header class="m-main">
+    <h1 class="m-main--head"><?php echo $head;?></h1>
   </header>
 <div class="container">
   <div class="flex-large">
@@ -61,7 +61,7 @@
         if($this->session->userdata('name') == true){
             echo "Hello " .  $this->session->userdata('name');
         }?>
-      
+
       <article>
         Results
         </p>

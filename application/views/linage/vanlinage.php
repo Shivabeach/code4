@@ -1,6 +1,6 @@
 <body id="vanlinage">
   <header class="m-main">
-    <h1 class="heading"><?php echo $head;?></h1>
+    <h1 class="m-main--head"><?php echo $head;?></h1>
   </header>
 <div class="container">
   <div class="flex1">

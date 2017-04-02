@@ -1,6 +1,6 @@
 <body id="topdog">
- <header class="m-main">
-    <h1 class="heading"><?php echo $head;?></h1>
+  <header class="m-main">
+    <h1 class="m-main--head"><?php echo $head;?></h1>
   </header>
 <div class="container">
   <div class="flex-large">
@@ -27,7 +27,7 @@
           $addr,
           $row->page,
           $row->region . " " . $row->country
-        ); 
+        );
       }
       echo $this->table->generate();
        ?>

@@ -1,6 +1,6 @@
 <body id="van">
   <header class="m-main">
-    <h1 class="heading"><?php echo $head;?></h1>
+    <h1 class="m-main--head"><?php echo $head;?></h1>
   </header>
 <div class="container">
   <div class="flex1">
@@ -17,7 +17,7 @@
           <button class="grab">Read</button>
           <div class="ancestry--ancestryContent item"><?php echo $this->typography->auto_typography($content);?></div>
           <h6 class="ancestry--ancestryDate"><?php echo "Creation " . html_escape($row->date), nbs(5), "Last Updated " . html_escape($row->last_date);?></h6>
-          
+
         </article>
       </div>
     <?php endforeach;?>

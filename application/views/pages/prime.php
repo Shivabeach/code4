@@ -1,6 +1,6 @@
 <body id="prime">
   <header class="m-main">
-    <h1 class=".m-main--head">The Family</h1>
+    <h1 class="m-main--head">The Family</h1>
   </header>
     <div class="container">
       <div class="flex1">
@@ -27,7 +27,7 @@
             <p>
               Dad's family is much more on the side of Denmark, Germany, French, Netherlands and Sweden.
             </p>
-          
+
             <h6 class="ancestry--ancestryDate">2/20/2016</h6>
         </div>
         </article>

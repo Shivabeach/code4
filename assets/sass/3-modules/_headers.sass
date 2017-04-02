@@ -2,20 +2,7 @@
 
 /* main top header
 .m-main
-  +mobile
-    height: 10em
-
-    +center(center, flex-end)
-
-
-  +tablet
-    height: 10em
-
-    +center(center, flex-end)
-
-
   +center(center, center)
-
   display: -webkit-box
   display: flex
   display: -ms-flexbox
@@ -24,19 +11,25 @@
   width: 80%
   height: 12em
   -ms-flex-wrap: wrap
+  +mobile
+    height: 10em
+
+    +center(center, flex-end)
+
+  +tablet
+    height: 10em
+
+    +center(center, flex-end)
 
   &--head
-    font-family: $font-stack-consolas
+    margin: 0
 
     +tablet
       font-size: $base-font-size * 3
-
-      h1
-        margin-bottom: 0
-
+      font-family: $font-stack-consolas
+      margin-bottom: 0
 
     +mobile
       font-size: $base-font-size * 2
-
-      h1
-        margin-bottom: 0
+      font-family: $font-stack-consolas
+      margin-bottom: 0

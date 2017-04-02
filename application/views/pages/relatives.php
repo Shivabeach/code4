@@ -1,6 +1,6 @@
 <body id="relates">
- <header class="m-main">
-    <h1 class="heading"><?php echo $head ;?></h></h1>
+  <header class="m-main">
+    <h1 class="m-main--head"><?php echo $head ;?></h></h1>
   </header>
   <div class="container">
     <div class="flex1">
@@ -33,7 +33,7 @@
           $row->country,
           $row->Total
         );
-      } 
+      }
         echo $this->table->generate();
       ?>
     </div>
