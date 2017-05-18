@@ -1,0 +1,18 @@
+$grid-columns: 12
+$grid-max-width: 65em
+
+[class*='coll-']
+    float: left
+    padding: 1em
+    width: 100%
+    min-height: 1px
+
+
+@media #{$breakpoint-medium}
+    .wrap
+        width: 95%
+        max-width: $grid-max-width
+
+    @for $i from 1 through $grid-columns
+        .coll-#{$i}
+            width: 100% / $grid-columns * $i
