@@ -9,19 +9,19 @@
 	flex-wrap: wrap
 	width: 80%
 	+margin(0 auto)
-	background: transparent
 	min-height: 100%
+	background: transparent
 
 	+tablet
-		background: inherit
 		margin: 10px
 		width: 100%
+		background: inherit
 		font-size: $small-base-font
 
 	+mobile
+		width: 100%
 		background: inherit
 		margin-top: 2em
-		width: 100%
 		font-size: $small-base-font
 
 //example media call
@@ -29,9 +29,12 @@
 //layout left flex
 .flex1
 	flex: 1
-	background: transparent
+	background: $sidebar2
 	padding: .5rem
-
+	+border-top-radius(10px)
+	+border-color($sidebar3 null null null)
+	+border-style(solid null null null)
+	+border-width(4px)
 	+tablet
 		display: none
 
@@ -44,6 +47,14 @@
 	background: transparent
 	padding: 0.5rem
 
+	+tablet
+		width: 100%
+		padding: 0
+
+	+mobile
+		width: 100%
+		padding: 0
+
 	&--wrapper
 		display: flex
 
@@ -52,3 +63,9 @@
 	flex: 1
 	padding: 0 0.5rem
 	background: transparent
+
+	+tablet
+		display: none
+
+	+mobile
+		display: none

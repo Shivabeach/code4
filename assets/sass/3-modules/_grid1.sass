@@ -2,17 +2,23 @@ $grid-columns: 12
 $grid-max-width: 65em
 
 [class*='coll-']
-    float: left
-    padding: 1em
     width: 100%
+    float: left
     min-height: 1px
+    padding: 1em
 
 
 @media #{$breakpoint-medium}
     .wrap
-        width: 95%
-        max-width: $grid-max-width
+        display: flex
+        flex-wrap: wrap
+        align-items: flex-start
+        justify-content: space-around
+        width: 100%
+        float: left
 
     @for $i from 1 through $grid-columns
-        .coll-#{$i}
+        .col-#{$i}
             width: 100% / $grid-columns * $i
+            min-height: 200px
+            padding: 15px 10px

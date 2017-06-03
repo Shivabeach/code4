@@ -1,16 +1,19 @@
-
-$mobile:  568px;
-$tablet:  768px;
+$mobile:  600px; //max-width
+$tablet:  992px; //max-width
+$timeline: 1000px;
 $desktop: 1024px;
 
 $base-font-family:    $font-stack-helvetica;
 $heading-font-family: $font-stack-consolas;
 
 
-$base-font-size: 1.1em;
+$base-font-size: 18;
 $em-base:        $base-font-size;
 $small-base-font: 1em;
 
+@function em($px, $base: $base-font-size){
+  @return #{$px / $base}em;
+}
 
 $base-line-height:    1.5;
 $heading-line-height: 1.2;
@@ -46,3 +49,4 @@ $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $l
 
 $base-duration: 150ms;
 $base-timing:   ease;
+$base-transitions: all 150ms ease;

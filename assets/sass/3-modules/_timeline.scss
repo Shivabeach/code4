@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+.intro {
+  background: #F45B69;
+  padding: 100px 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.timeline ul {
+  background: #456990;
+  padding: 50px 0;
+}
+
+.timeline ul li {
+  position: relative;
+  background: #fff;
+  padding-top: 50px;
+  margin: 0 auto;
+  width: 6px;
+  list-style-type: none;
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  background: inherit;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  transform: translateX(-50%);
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  font-size: .8em;
+  background: #F45B69;
+  padding: 10px;
+  width: em(300);
+
+  @include tablet{
+    width: 14em;
+  }
+  @include mobile {
+    width: 14em;
+  }
+}
+
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  border-style: solid;
+  width: 0;
+  height: 0;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #F45B69 transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -339px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #F45B69;
+}
+
+time {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 6px;
+}

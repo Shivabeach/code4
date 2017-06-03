@@ -28,7 +28,7 @@
               <dd class="m-listContainer--ddstyle">Henry’s cremated remains were never taken after his death and are still available at the Oregon State Hospital to be claimed by anyone who is related. More information is available at http://www.oregon.gov/oha/amh/osh/pages/cremains.aspx A book by David Maisel and a documentary by Ondi Timoner & Robert James, both entitled "Library of Dust" also provide more information. 2nd Great Uncle VanHorn side. Died 1948 </dd>
           <dt class="m-listContainer--dtstyle">Jonathon Cummings Sholes</dt>
             <dd class="m-listContainer--ddstyle">
-              <p>Our 2nd Great Uncle who died at Gettysburg, was commanded by none other than the youngest general in the army, George Armstrong Custer.</p>
+              <p>Our 2nd Great Uncle who died at Gettysburg on the 3rd day of the battle, was commanded by none other than the youngest general in the army, George Armstrong Custer. 7th Michigan Infantry Company G</p>
            </dd>
            <dt class="m-listContainer--dtstyle">Alonzo Prestage</dt>
              <dd class="m-listContainer--ddstyle">Alonzo Prestage was baptized a member of the Reorganized Church of Jesus Christ of Latter Day Saints on 16 May 1887 at Deerfield, Lapier, Michigan, by J. A. Carpenter. He was ordained a deacon on 5 August 1888 by Andrew Barr. He attended the Five Lakes, Michigan Branch.</dd>
@@ -39,14 +39,14 @@
           <dt class="m-listContainer--dtstyle">Military</dt>
             <dd class="m-listContainer--ddstyle">Sergeant Thomas Reed d.1719</dd>
 
-            <dd class="m-listContainer--ddstyle">Jonathon Cummings Sholes d.3 JUL 1863 Gettysburg</dd>
+            <dd class="m-listContainer--ddstyle">Sgt. Jonathon Cummings Sholes d.3 JUL 1863 Gettysburg. 7th Michigan Infantry Company G. Buried in the Gettysburg National Cemetary Section C, Grave #5. Michigan lot. Enlistment Date 13 Aug 1861. Enlisted from Lapeer Michigan. Died in Picketts Charge</dd>
 
             <dd class="m-listContainer--ddstyle">
               Daniel Reed Jr. Washington Co NY 73 d. 1840 Connecticut </dd>
             <dd class="m-listContainer--ddstyle">
-              Thomas Stoddard(1744 - 1814. Private. Revolutionary War Cayuga Co NY 41 1775</dd>
+              Thomas Stoddard(1744 - 1814). Private. Revolutionary War Cayuga Co NY 41 1775</dd>
             <dd class="m-listContainer--ddstyle">
-              Elisha Stoddard(1750 - 1788. Corporal. Continental Troops, Connecticut. French and Indian War</dd>
+              Elisha Stoddard(1750 - 1788). Corporal. Continental Troops, Connecticut. French and Indian War</dd>
             <dd class="m-listContainer--ddstyle">Harlan J Sholes 1942 - 12/15/1945  WW2. Aviation Cadet. Sergeant Michigan Army  Air Corps</dd>
             <dd class="m-listContainer--ddstyle">Col Ebenezer Condict. Continental Army, died from smallpox in service. 1735-1777</dd>
             <dd class="m-listContainer--ddstyle">Joseph Frank Steward. PVT US MARINE CORPS WORLD WAR II</dd>

@@ -7,6 +7,7 @@ class Checkin extends CI_Controller{
   {
     parent::__construct();
     $this->load->model("checkmod");
+    $this->load->library('email');
   }
 
   function index()
@@ -119,6 +120,11 @@ class Checkin extends CI_Controller{
         $this->load->view('pages/header/head', $data);
         $this->load->view('pages/login/log', $data);
         $this->load->view('pages/footer/footer');
+        $this->email->from('brad@van-horn.us', 'Brad');
+        $this->email->to('brad@van-horn.us');
+        $this->email->subject('Failed Login');
+        $this->email->message('Someone has just tried to log in');
+        $this->email->send();
       }else
       {
         $row    = $query->row();
@@ -131,6 +137,11 @@ class Checkin extends CI_Controller{
           );
           $this->session->set_userdata($data);
           redirect("checkin/admin");
+          $this->email->from('brad@van-horn.us', 'Brad');
+          $this->email->to('brad@van-horn.us');
+          $this->email->subject('Login');
+          $this->email->message('Someone has just logged in');
+          $this->email->send();
         }else {
           $data['head']  = "Login to admin";
           $data['title'] = 'Login to Admin';
@@ -158,7 +169,6 @@ This feeds the admin area page
       'table_open'     => '<table class="m-addin"',
       'heading_cell_start'    => '<th class="m-addin--head">',
       'heading_cell_end'      => '</th>',
-
       'cell_start'     => '<td class="m-addin--data-display">',
       'cell_end'       => '</td>',
       'cell_alt_start' => '<td class="m-addin--data-display">',
@@ -173,7 +183,4 @@ This feeds the admin area page
     $this->load->view('admin/admin', $data);
     $this->load->view('pages/footer/footer');
   }
-
-
-
 } //end of controller

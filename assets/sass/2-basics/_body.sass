@@ -5,22 +5,29 @@
 *
 	box-sizing: border-box
 
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section
+	display: block
+
+
 body, html
-	color: $base-font-color
-	min-height: 100vh
+	overflow: auto
 	margin: 0
+	min-height: 100vh
 	padding: 0
 	background-blend-mode: soft-light
-	line-height: $base-line-height
+	background: linear-gradient($v-redt, $v-red)
 	-moz-osx-font-smoothing: grayscale
 	-webkit-font-smoothing: antialiased
+	line-height: $base-line-height
 	text-rendering: optimizeLegibility
 	-webkit-transition: all 300ms ease
 	transition: all 300ms ease
-	overflow: auto
 	font-size: calc(18px + 0.25vw)
-	background: -webkit-linear-gradient($alt1, $alt2, $alt3)
-	background: linear-gradient($alt1, $alt2, $alt3)
+	color: $base-font-color
+	vertical-align: baseline
+
 
 body[id="post-entry"]
 	.flex-large
@@ -28,3 +35,14 @@ body[id="post-entry"]
 
 	.flex-small
 		padding: 0
+
+body[id="timeline"]
+	.flex-small
+		display: none
+	+timeline
+		.container
+			margin: 0
+			width: 100%
+
+		.flex1
+			display: none

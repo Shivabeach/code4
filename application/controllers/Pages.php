@@ -328,7 +328,26 @@ class Pages extends CI_Controller
     {
       $data = [];
       $data['head'] = "Reading Sources";
-      $data['title'] = "Reading and Data Sources";
+      $data['title'] = "Historical and Data Sources";
+
+      $type1 = "History";
+      $type2 = "DNA";
+      $this->db->select("family, name, url, type");
+      $this->db->where('type', $type1);
+      $this->db->order_by("family");
+      $query = $this->db->get("sources");
+      if ($query->result())
+      {
+        $data['history'] = $query->result();
+      }
+      $this->db->select("family, name, url, type");
+      $this->db->where('type', $type2);
+      $this->db->order_by("family");
+      $query = $this->db->get("sources");
+      if ($query->result())
+      {
+        $data['dna'] = $query->result();
+      }
 
       $data['main_content'] = 'pages/sources';
       $this->load->view('pages/includes/template', $data);
@@ -351,6 +370,19 @@ class Pages extends CI_Controller
       $this->load->view('pages/includes/template', $data);
     }
 
+    public function vtime() {
+      $data['head'] = "VanHorn Timeline";
+      $data['title'] = "VanHorn Timeline";
+      $data['main_content'] = "pages/vantimeline";
+      $this->load->view('pages/includes/template', $data);
+    }
+
+    public function btime() {
+      $data['head'] = "Bostick Timeline";
+      $data['title'] = "Bostick Timeline";
+      $data['main_content'] = "pages/bostimeline";
+      $this->load->view('pages/includes/template', $data);
+    }
 
 } //end of file
 /* End of file ${TM_FILENAME:${1/(.+)/lPages.php/}} */

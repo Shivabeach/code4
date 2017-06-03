@@ -10,6 +10,9 @@
       <div class="ancestry--container">
         <article class="ancestry">
           <h3 class="ancestry--ancestryTitle item">Family History</h3>
+          <div class="slug">
+            <p>A short description of our DNA that covers the last 500 years</p>
+          </div>
           <button class="grab">Read</button>
           <div class="ancestry--ancestryContent">
             <p> Where we are from in the last 500 years or so.

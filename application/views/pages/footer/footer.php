@@ -13,7 +13,7 @@
 
           <li class="m-nav-grid--listpad"><?php echo anchor('Pages/vanlinage','VanHorn Linages');?></li>
 
-          <li class="m-nav-grid--listpad"><a href="#">Stories</a></li>
+          <li class="m-nav-grid--listpad"><?php echo anchor('pages/vtime','VanHorn Timeline');?></li>
 
         </ul>
 
@@ -26,7 +26,7 @@
           <li class="m-nav-grid--listpad"><?php echo anchor('Pages/bos','Bostick History');?></li>
           <li class="m-nav-grid--listpad"><?php echo anchor('Pages/bosdna','Bostick DNA');?></li>
           <li class="m-nav-grid--listpad"><?php echo anchor('Pages/boslinage','Bostick Linages');?></li>
-          <li class="m-nav-grid--listpad"><a href="#">Stories</a></li>
+          <li class="m-nav-grid--listpad"><?php echo anchor('pages/btime','Bostick Timeline');?></li>
         </ul>
       </div>
 

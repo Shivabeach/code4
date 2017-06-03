@@ -1,6 +1,5 @@
 @charset "UTF-8"
 
-/*more
 // lower nav grif
 .nav-grid
   -webkit-box-flex: 1
@@ -29,8 +28,8 @@
 //lower footer navigation
 
 .footwrapper
-  display: flex
   flex-direction: row
+  display: flex
   align-items: stretch
   flex-wrap: wrap
   justify-content: flex-end
@@ -39,9 +38,9 @@
   flex: 1
 
   &--title
-    color: red
     text-align: center
     text-shadow: 1px 1px 1px $border-shadow
+    color: red
 
     +tablet
       text-align: left
@@ -51,21 +50,26 @@
       text-align: left
 
   &--center
-    display: flex
     flex-direction: column
-    padding-left: 40%
+    display: flex
+    padding-left: 20%
 
     +tablet
-      font-size: 0.85rem
       padding-left: 5px
+      font-size: 0.85rem
 
 
     +mobile
-      font-size: 0.85rem
       padding-left: 5px
+      font-size: 0.85rem
 
   &--listpad
     padding: 3px
+
+
+  .small
+
+  color: $bottom-list-color
 
 .box20
   color: $red1

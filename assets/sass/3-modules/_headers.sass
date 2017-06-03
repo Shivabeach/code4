@@ -2,34 +2,45 @@
 
 /* main top header
 .m-main
-  +center(center, center)
-  display: -webkit-box
-  display: flex
-  display: -ms-flexbox
-  flex-wrap: wrap
-  margin: 0 auto
-  width: 80%
-  height: 12em
-  -ms-flex-wrap: wrap
-  +mobile
-    height: 10em
+	+center(center, center)
 
-    +center(center, flex-end)
+	//background-color: shade($alt5, 5%)
+	display: -webkit-box
+	display: flex
+	display: -ms-flexbox
+	flex-wrap: wrap
+	margin: 0 auto
+	width: 80%
+	height: 12em
+	-ms-flex-wrap: wrap
+	background: linear-gradient(shade($alt5, 15%), $alt5)
 
-  +tablet
-    height: 10em
+	+border-bottom-radius(10px)
+	+border-color(null null $sidebar3 null )
+	+border-style(null null solid null)
+	+border-width(4px)
 
-    +center(center, flex-end)
+	+tablet
+		height: 8em
+		width: 100%
 
-  &--head
-    margin: 0
+		+center(center, flex-end)
 
-    +tablet
-      font-size: $base-font-size * 3
-      font-family: $font-stack-consolas
-      margin-bottom: 0
+	+mobile
+		height: 5em
+		width: 100%
 
-    +mobile
-      font-size: $base-font-size * 2
-      font-family: $font-stack-consolas
-      margin-bottom: 0
+		+center(center, flex-end)
+
+	&--head
+		margin: 0
+		font-family: 'england_hand_dbregular'
+
+		+tablet
+			font-size: $base-font-size * 3
+			margin-bottom: 0
+
+
+		+mobile
+			font-size: $base-font-size * 2
+			margin-bottom: 0

@@ -10,8 +10,8 @@
             </li>
             <li class="m-left-nav--content"><i class="fa fa-link" aria-hidden="true"></i>
                 <?php echo anchor('pages/vanlinage','VanHorn Linages');?>
-            </li>
-            <li class="m-left-nav--content"><i class="fa fa-link" aria-hidden="true"></i><a href="#">Stories</a></li>
+            </li> 
+            <li class="m-left-nav--content"><?php echo anchor('pages/vtime','VanHorn Timeline');?></li>
         </ul>
     </article>
     <article>
@@ -25,7 +25,7 @@
             <li class="m-left-nav--content"><i class="fa fa-link" aria-hidden="true"></i>
                 <?php echo anchor('pages/boslinage','Bostick Linages');?>
             </li>
-            <li class="m-left-nav--content"><i class="fa fa-link" aria-hidden="true"></i> <a href="#">Stories</a></li>
+            <li class="m-left-nav--content"><?php echo anchor('pages/btime','Bostick Timeline');?></li>
         </ul>
     </article>
     <article>

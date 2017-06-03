@@ -1,13 +1,15 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');?>
     <!DOCTYPE html>
     <html lang="en">
-    
+
     <head>
         <meta charset="utf-8">
         <title>
             <?php echo $title; ?>
         </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:title" content="VanHorn-Bostick Family" />
+        <meta property="og:description" content="Ancestry of 2 familys" />
 
         <?php
     $meta = array(
@@ -34,7 +36,7 @@
     );
     echo meta($meta);
     ?>
-            <link rel="stylesheet" href="<?php echo base_url('assets/css/main.min.css');?>" media="screen">
+            <link rel="stylesheet" href="<?php echo base_url('assets/css/main.css');?>" media="screen">
             <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.min.css">
             <link rel="stylesheet" href="<?php echo base_url('assets/plugins/vert/vertical-tabs.css');?>">
 
