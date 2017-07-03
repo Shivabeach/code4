@@ -2,11 +2,10 @@
 
 //primary container
 .container
+	flex-wrap: wrap
 	display: -webkit-box
 	display: -ms-flexbox
 	display: flex
-	-ms-flex-wrap: wrap
-	flex-wrap: wrap
 	width: 80%
 	+margin(0 auto)
 	min-height: 100%
@@ -19,9 +18,9 @@
 		font-size: $small-base-font
 
 	+mobile
+		margin-top: 2em
 		width: 100%
 		background: inherit
-		margin-top: 2em
 		font-size: $small-base-font
 
 //example media call
@@ -29,8 +28,8 @@
 //layout left flex
 .flex1
 	flex: 1
-	background: $sidebar2
 	padding: .5rem
+	background: $sidebar2
 	+border-top-radius(10px)
 	+border-color($sidebar3 null null null)
 	+border-style(solid null null null)
@@ -44,8 +43,8 @@
 //layout center flex
 .flex-large
 	flex: 3
-	background: transparent
 	padding: 0.5rem
+	background: transparent
 
 	+tablet
 		width: 100%

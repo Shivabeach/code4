@@ -1,71 +1,50 @@
-@charset "UTF-8"
+@charset 'UTF-8'
 
 @import url("https://fonts.googleapis.com/css?family=Arsenal")
 
-$arsenal: "Arsenal", sans-serif
 
-$sidebar:           #19272D
-$teal:              teal
-$graybg:            #EDEFF0
-$article:           #FAFAFA
-$gray1:             #f8f9fa
-$redp:              #fff5f5
-$pinkp:             #fff0f6
-$grapep:            #f8f0fc
-$violetp:           #f3f0ff
-$bluep:             #e8f7ff
-$cyanp:             #e3fafc
-$tealp:             #e6fcf5
-$greenp:            #ebfbee
-$limep:             #f4fce3
-$orangep:           #fff4e6
-$articleblue:       #CAE4D6
-$cream:             #EEFDE0
-$ltgreen:           #CDE4CA
-$shadegreen:        #E0FDF6
-$sidebar:           #19272d
-$green:             #61e69d
-$graybg:            #edeff0
-$article:           #fafafa
-$text1:             #e8fefe
-$indigo-slight:     #ebedf7
-$brown-slight:      #f1eeec
-$strong-orange:     #ffb74c
-$red1:              #ffe3e3
-$pink1:             #ffdeeb
-$grape1:            #f3d9fa
-$violet1:           #e5dbff
-$indigo1:           #dbe4ff
-$blue1:             #ccedff
-$cyan1:             #c5f6fa
-$teal1:             #c3fae8
-$green1:            #d3f9d8
-$lime1:             #e9fac8
-$yellow1:           #fff3bf
-$orange1:           #ffe8cc
-$footer:            #403B31
-$border-shadow:     #D2E6C9
-$bottom-list-color: rgb(255, 237, 198)
-$bottom-list-hover: #E5AA6E
-$button:            #BFC0FF
-$border:            #6F3A23
+$sidebar: #19272d
+$teal: #008080
+
+$ltgreen: #cde4ca
+$green: #61e69d
+$red1: #ffe3e3
+$orange: #ffa500
+$footer: #403b31
+$border-shadow: #d2e6c9
+$bottom-list-color: #ffedc6
+$button: #bfc0ff
+$ancestor-border: #6f3a23
+$border: #6F3A23
+
 //background colors for gradient
-$alt1: #EE5B2F
-$alt2: #D75C20
-$alt3: #F78127
+$alt1: #ee5b2f
+$alt2: #d75c20
+$alt3: #f78127
 
-$alt4:    tint($alt1, 50%)
-$alt5:    tint($alt2, 50%)
-$alt6:    tint($alt3, 50%)
+$sidebar2: #9a8f7b
+$sidebar3: #4d3d3b
 
-$sidebar:  #538077
-$sidebar1: #7A7F77
-$sidebar2: #9A8F7B
-$sidebar3: #4D3D3B
 
-//possible body gradient
-$orangelite1: #ffcc80
-$orangelite2: #ffb74d
+$alt4: tint($alt1, 50%)
+$alt5: tint($alt2, 50%)
+$alt6: tint($alt3, 50%)
+
+$bottom-list-color: #ffedc6
+$bottom-list-hover: tint($bottom-list-color, 60%)
+
+// Gray Scale
+$white: #fff
+$silver: #ddd
+$gray: #aaa
+$black: #111
+
+//links
+$link:    #6e2a16
+$hover:   #7c787b
+$visited: $black
+$active:  #88af86
+$current: #ff754c
 
 $v-red: #D95A77
 $v-pink: #F4B6BB
@@ -74,30 +53,20 @@ $v-olive: #AEAB8A
 $v-redt: tint($v-red, 20%)
 $v-reds: shade($v-red, 50%)
 
-// Gray Scale
-$white:             #fff
-$silver:            #ddd
-$gray:              #aaa
-$black:             #111
-
-//links
-$link:    #6E2A16
-$hover:   #7C787B
-$visited: $black
-$active:  #88AF86
-$current: #FF754C
-
 //container widths
 $width100: 100%
-$width50:  50%
-$width80:  80%
+$width50: 50%
+$width80: 80%
+
+//set base font
+$base-font-size: 16px
+$em-base: $base-font-size
 
 $base-font-color: #111
 
-// grid variables
-$grid-columns: 12
-$grid-max-width: 65em
-
+$notification-confirm: hsla(101, 72%, 37%, 1)
+$notification-warning: #ffc53a
+$notification-alert: #ac2222
 
 // breakpoints
 $breakpoint-small: "only screen and (min-width: 20em)"

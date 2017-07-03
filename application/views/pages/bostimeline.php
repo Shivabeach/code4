@@ -8,7 +8,7 @@
       </div>
       <div class="flex-large">
         <div class="ancestry">
-          <p>The timeline of the Bostick family starting with its original known founders</p>
+          <p>The timeline of the Bostick family. I have started this in the year 1340. The reason being the timeline would be very long, and the records going back past 1200 are questionable. Many of the records of individuals are conflicted depending on the sources.</p>
         </div>
         <section class="timeline">
           <ul>
@@ -29,7 +29,7 @@
             </li>
             <li>
               <div>
-                <time>1412</time>Sir Adam De Bostock 1412–1459 Birth 22 FEB 1412 • Bostock, Cheshire, England. He was frequently mentioned in documents of his time, in particular on 5 separate occasions. According to the Visitation of Berkshire he was slain at Blore Heath in 1459. became one of the captains of King Richard II elite bodyguard of archers.
+                <time>1412</time>Sir Adam De Bostock 1412–1475 Birth 22 FEB 1412 • Bostock, Cheshire, England. He was frequently mentioned in documents of his time, in particular on 5 separate occasions. According to the Visitation of Berkshire he was slain at Blore Heath in 1459. became one of the captains of King Richard II elite bodyguard of archers.
               </div>
             </li>
             <li>
@@ -44,43 +44,73 @@
             </li>
             <li>
               <div>
-                <time>1522</time>Robert De Bostock Birth 1522 • Cheshire, England. King Henry VIII. 11th great-grandfather
+                <time>1535</time>Robert De Bostock Birth 1535 • Cheshire, England. Death 12 MAR 1583 • Davenham, Cheshire, England. King Henry VIII. 11th great-grandfather. Burial Saint Wilfrid's Churchyard Davenham
               </div>
             </li>
             <li>
               <div>
-                <time>1559</time>Arthur Bostick 1559–1632 Birth 18 MAR 1559 • Davenham, Cheshire,England. 10th great-grandfather. Elizabeth 1 was Queen of England
+                <time>1559</time>Arthur Bostick 1559–1632 Birth 18 MAR 1559 • Davenham, Cheshire, <u>England.</u> Death 4 JUL 1632 • Bunbury, Cheshire, <u>England.</u> 10th great-grandfather. Elizabeth 1 was Queen of England
               </div>
             </li>
             <li>
               <div>
-                <time>1977</time>William Arthur Bostwick 1603–1680 Birth 22 DEC 1603 • Tarporley, Cheshire, England. 1st Bostick in America, Stratford Connecticut.
+                <time>1603</time>William Arthur Bostwick 1603–1680 Birth 22 DEC 1603 • Tarporley, Cheshire, <u>England.</u> Death 10 DEC 1680 • Stratford, Fairfield, <u>Connecticut,</u> USA <b>1st Bostick in America</b>
               </div>
             </li>
             <li>
               <div>
-                <time>1985</time>
+                <time>1638</time> John Bostwick. Birth 18/10/1638 • Tarporley, Cheshire, <u>England.</u> Death 11 DEC 1688 • Stratford, Fairfield, <u>Connecticut,</u> USA Born at the same time as our Van Horn family started
+
               </div>
             </li>
             <li>
               <div>
-                <time>2000</time>
+                <time>1672</time> Joseph Bostwick 1672–1726 Birth 05/11/1672 • Stratford, Fairfield, <u>Connecticut,</u> USA. Death 08/04/1726 • New Milford, Litchfield, <u>Connecticut,</u> USA
               </div>
             </li>
             <li>
               <div>
-                <time>2005</time>
+                <time>1702</time> Abraham Bostwick 1702–1776 Birth 05 SEPT 1702 • Stratford, Fairfield, <u>Connecticut,</u> USA. Death 02 APR 1776 • New Milford, Litchfield, <u>Connecticut,</u> USA. Queen Annes wars between France and England for control of America
+
+              </div>
+            </li>
+            <li>
+              <div>
+                <time>1735</time> Joseph Bostwick 1735–1800 Birth 14/11/1735 • New Milford, Litchfield, <u>Connecticut,</u> USA. Death 1800 • Crown Point, Essex, <u>New York,</u> USA. Married Mary Roberts and Anne Tuttle. 9 kids total. 5th great-grandfather
+              </div>
+            </li>
+            <li>
+              <div>
+                <time>1766</time> Austin Bostwick 1766–1844 Birth 11 NOVEMBER 1766 • New Milford, Litchfield, <u>Connecticut,</u> USA. Death 5 MAY 1844 • Fairfield, Franklin, <u>Vermont,</u> USA. Married Mary Sturdevant and had 7 kids. Lived when America became America.
+              </div>
+            </li>
+            <li>
+              <div>
+                <time>1795</time> Samuel Bostick 1795–1799 Birth 10/05/1795 • Fairfield, Franklin, <u>Vermont,</u> USA. Death 05/07/1799 • Shelby, Orleans, <u>New York,</u> USA. Married Laura Burnham, 6 children. 3rd great-grandfather
+
+              </div>
+            </li>
+            <li>
+              <div>
+                <time>1817</time> Austin Bostick 1817–1888 Birth 08/08/1817 • Shelby, Orleans, <u>New York,</u> USA. Death 12 AUG 1888 • Saginaw, Saginaw, <u>Michigan,</u> USA. Married 3 times. Our line is from the first wife Sarah Ann Randolph
+              </div>
+            </li>
+            <li>
+              <div>
+                <time>1841</time> Alonzo A. Bostick 1841–1920 Birth 28 OCT 1841 • Albion, Orleans, <u>New York,</u> USA. Death 12 JAN 1920 • Lapeer, Lapeer Co., <u>Michigan</u>. Married Lucy Thompkins and Florence Beers. 13 Children
+              </div>
+            </li>
+            <li>
+              <div>
+                <time>1876</time> Andrew Madison Bostick 1876–1941 Birth 4/16/1876 • Hadley, Lapeer Co., <u>Michigan.</u> Death 10 AUG 1941 • Oregon Twp., Lapeer Co., <u>Michigan</u>. Our mothers father. Married Goldie Grace Reed from which we have another very deep rich ancestry.
               </div>
             </li>
           </ul>
         </section>
       </div>
-
       <div class="flex-small">
         <section class="wrapper">
             <?php include(APPPATH . "/views/pages/includes/side.php");  ?>
-
         </section>
-
       </div>
     </div>
