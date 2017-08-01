@@ -33,6 +33,35 @@
            <dt class="m-listContainer--dtstyle">Alonzo Prestage</dt>
              <dd class="m-listContainer--ddstyle">Alonzo Prestage was baptized a member of the Reorganized Church of Jesus Christ of Latter Day Saints on 16 May 1887 at Deerfield, Lapier, Michigan, by J. A. Carpenter. He was ordained a deacon on 5 August 1888 by Andrew Barr. He attended the Five Lakes, Michigan Branch.</dd>
 
+          <dt class="m-listContainer--dtstyle">Robert "The Smythe" Pease</dt>
+            <dd class="m-listContainer--ddstyle">1485 - 1547, 13th great-grandfather. Robert lived through these historical events:
+              <ul class="sidenotes">
+                <li>1483-1485: Reign of King Richard III (York) </li>
+                <li>1485-1509: Reign of King Henry VII (Tudor) </li>
+                <li>1492: Columbus discovers the New World (age 7) </li>
+                <li>1509-1547: Reign of King Henry VIII (Tudor) and his 6 wives</li>
+                <li>1513: Henry VIII invaded France </li>
+                <li>1513: Scotland's James IV invaded England but were defeated. </li>
+                <li>1522: Magellan circumnavigates the world </li>
+                <li>1533: Henry VIII married Anne Boleyn and broke from the Catholic Church. Parliament passed the First Act of Secession and all adults in the kingdom had to agree to it by an oath or face imprisonment for life. Several were beheaded. The Church of England did not give freedom to the Protestant Reformers. Robert Pease was abt 48. </li>
+                <li>1547: Robert Pease died the year Henry VIII died.</li>
+              </ul>
+            </dd>
+          <dt class="m-listContainer--dtstyle">Lapeer Days</dt>
+            <dd class="m-listContainer--ddstyle">Alonzo A Bostick. 1841 - 1920, great-grandfather</dd>
+            <dd class="m-listContainer--ddstyle">
+              On Aug. 28, 1901, Alonzo A. Bostick and his son Austin celebrated the grand opening of Bostick Stove Works in Lapeer. Neither Alonzo nor his son could have foreseen the legacy they bestowed on our community. The simple grand opening celebration inspired the idea of a community festival held for the first time the following year. The Lapeer Days Festival was born. From simple beginning’s it has grown over the years to become the county’s largest festival and Michigan’s largest FREE festival!</dd>
+
+          <dt class="m-listContainer--dtstyle">John "The Clothier" Pease</dt>
+            <dd class="m-listContainer--ddstyle">1540 - 1616, 11th great-grandfather</dd>
+          <dd class="m-listContainer--ddstyle">He lived during tumultuous times in England.
+            <ul class="sidenotes">
+             <li> He lived through the reigns of Henry VIII, Edward VI, (Bloody) Mary I, Elizabeth I (he was age 18-63), and James I. </li>
+             <li> He was 71 in 1611 when the King James Bible was published. </li>
+             <li> He was 72 in 1612 when the last burning of heretics in England was recorded.</li>
+             </ul>
+          </dd>
+
           <dt class="m-listContainer--dtstyle">Graduates</dt>
             <dd class="m-listContainer--ddstyle">Sir William Browne - Graduate of Cambridge University Approx. 1580</dd>
             <dd class="m-listContainer--ddstyle">Anthony Stoddard(1559 - 1637) - Oxford University</dd>

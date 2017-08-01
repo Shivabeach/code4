@@ -1,7 +1,7 @@
 /*example*/
 @function text-contrast($background) {
 	@if (lightness($background) > 50) {
-		@return lighten($background, 70%) // Lighter backgorund, return dark color;
+		@return lighten($background, 70%) // Lighter background, return dark color;
 	}@else {
 		@return darken($background, 90%) // Darker background, return light color;
   }

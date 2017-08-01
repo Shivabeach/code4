@@ -3,10 +3,8 @@ $tablet:  992px; //max-width
 $timeline: 1000px;
 $desktop: 1024px;
 
-
 $base-font-family:    $font-stack-orkney;
 $heading-font-family: $font-stack-consolas;
-
 
 $base-font-size: 18;
 $em-base:        $base-font-size;
@@ -19,12 +17,10 @@ $small-base-font: 1em;
 $base-line-height:    1.5;
 $heading-line-height: 1.2;
 
-
 $base-border-radius: 3px;
 $base-spacing:       $base-line-height * 1em;
 $small-spacing:      $base-spacing / 2;
 $base-z-index:       0;
-
 
 $blue:        #1565c0;
 $dark-gray:   #333;
