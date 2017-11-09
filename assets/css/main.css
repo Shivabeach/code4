@@ -602,6 +602,11 @@ a {
   -ms-flex-align: center;
   align-items: center; }
 
+a.opac {
+  opacity: 0.5;
+  background: none;
+  text-decoration: none; }
+
 article:not(.ancestry) {
   margin: 1em 0; }
 
@@ -731,7 +736,7 @@ time {
   font-weight: bold;
   margin-bottom: 6px; }
 
-[class*='coll-'] {
+[class*='col-'] {
   width: 100%;
   float: left;
   min-height: 1px;
@@ -1468,11 +1473,11 @@ body {
 /* Media queries for DNA pages */
 @media screen and (min-width: 992px) and (max-width: 1023px) {
   #mydna body, #ydna body, #boslinage body, #vanlinage body, #notes body, #logs body, #prime body, #van body, #relates body, #topdog body, #bos body {
-    padding: 0;
-    margin: 0; }
+    margin: 0;
+    padding: 0; }
   #mydna .container, #ydna .container, #boslinage .container, #vanlinage .container, #notes .container, #logs .container, #prime .container, #van .container, #relates .container, #topdog .container, #bos .container {
-    padding: 0;
-    margin: 0; }
+    margin: 0;
+    padding: 0; }
   #mydna .flex-small, #ydna .flex-small, #boslinage .flex-small, #vanlinage .flex-small, #notes .flex-small, #logs .flex-small, #prime .flex-small, #van .flex-small, #relates .flex-small, #topdog .flex-small, #bos .flex-small {
     display: none; } }
 @media screen and (min-width: 992px) and (max-width: 1023px) and (min-width: 992px) and (max-width: 1023px) {
@@ -1483,11 +1488,11 @@ body {
     display: none; } }
 @media screen and (max-width: 991px) {
   #mydna body, #ydna body, #boslinage body, #vanlinage body, #notes body, #logs body, #prime body, #van body, #relates body, #topdog body, #bos body {
-    padding: 0;
-    margin: 0; }
+    margin: 0;
+    padding: 0; }
   #mydna .container, #ydna .container, #boslinage .container, #vanlinage .container, #notes .container, #logs .container, #prime .container, #van .container, #relates .container, #topdog .container, #bos .container {
-    padding: 0;
-    margin: 0; }
+    margin: 0;
+    padding: 0; }
   #mydna .flex-small, #ydna .flex-small, #boslinage .flex-small, #vanlinage .flex-small, #notes .flex-small, #logs .flex-small, #prime .flex-small, #van .flex-small, #relates .flex-small, #topdog .flex-small, #bos .flex-small {
     display: none; } }
 @media screen and (max-width: 991px) and (max-width: 991px) {
